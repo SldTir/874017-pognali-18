@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="https://via.placeholder.com" width="10" height="10"
+        alt="Логотип Погнали?">
+    </a>
+    <div class="wrapper">
+      <button class="toogle"></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Попутчики</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="#">Авторизация</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__tel" href="tel:+88005558628">
+              <!--Псевдоэлемент иконка телефона-->
+              8 800 555-86-28
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__letter" href="#">
+              <!--Псевдоэлемент иконка письма-->
+              Mail@htmlacademy.ru
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list social-networks__list">
+          <li class="social-networks__item">
+            <a href="https://ru-ru.facebook.com/" aria-label="Facebook">
+              <!--Картинка вставленая через CSS-->
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a href="https://vk.com/feed" aria-label="В контакте">
+              <!--Картинка вставленая через CSS-->
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a href="https://www.instagram.com/?hl=ru" aria-label="Instagram">
+              <!--Картинка вставленая через CSS-->
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Попутчики</h1>
+    <section class="companion">
+      <h2 class="companion__subtitle">Попутчики</h2>
+      <p class="companion__text">Все мы индивидуальны и у каждого
+        свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,
+        другому маршрут для хайкинга.
+      </p>
+      <p class="companion__text"><b>Теперь можно легко найти
+          единомышленников!
+        </b></p>
+      <ul class="companion-catalog__list companion__list">
+        <li class="companion__item">
+          <!--Псевдоэлемент красная точка-->
+          <a href="#">
+            <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
+            <cite class="companion__name">Таня Фирсова</cite>
+          </a>
+          <p class="companion__text-like">
+            <!--Псевдоэлемент лайк-->1,5 м</p>
+          <p class="companion__text-hashtag">#ЗОЖ#ПП#Фитнес#пляж#авокадо#смузи</p>
+          <div>
+            <h3>Хочет посетить:</h3>
+            <ul class="companion__list-images-flag">
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Шри-Ланка</li>
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Таиланд</li>
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Сейшелы</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h3>Транспорт</h3>
+              <ul class="companion__way-of-movement">
+                <li><span class="companion__way-of-movement--active"></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+              </ul>
+            </div>
+            <table class="companion__table">
+              <tr>
+                <td>левел:</td>
+              </tr>
+              <tr>
+                <td>99</td>
+              </tr>
+            </table>
+            <a href="#" class="companion__button-call">Позвать!</a>
+          </div>
+        </li>
+        <li class="companion__item">
+          <!--Псевдоэлемент красная точка-->
+          <a href="#">
+            <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
+            <cite class="companion__name">Петя Демин</cite>
+          </a>
+          <p class="companion__text-like">
+            <!--Псевдоэлемент лайк-->150</p>
+          <p class="companion__text-hashtag">#бургер#бар#футбол#концерт#крафт</p>
+          <div>
+            <h3>Хочет посетить:</h3>
+            <ul class="companion__list-images-flag">
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Бельгия</li>
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Чехия</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h3>Транспорт</h3>
+              <ul class="companion__way-of-movement">
+                <li><span class="companion__way-of-movement--active"></span></li>
+                <li><span class="companion__way-of-movement--active"></span></li>
+                <li><span></span></li>
+                <li><span class="companion__way-of-movement--active"></span></li>
+              </ul>
+            </div>
+            <table class="companion__table">
+              <tr>
+                <td>левел:</td>
+              </tr>
+              <tr>
+                <td>80</td>
+              </tr>
+            </table>
+            <a href="#" class="companion__button-call">Позвать!</a>
+          </div>
+        </li>
+        <li class="companion__item">
+          <!--Псевдоэлемент красная точка-->
+          <a href="#">
+            <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
+            <cite class="companion__name">Марк Смолов</cite>
+          </a>
+          <p class="companion__text-like">
+            <!--Псевдоэлемент лайк-->1700</p>
+          <p class="companion__text-hashtag">#рэп#тату#хайпбист#кроссовки#суприм</p>
+          <div>
+            <h3>Хочет посетить:</h3>
+            <ul class="companion__list-images-flag">
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">США</li>
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Австралия</li>
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Доминикана</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h3>Транспорт</h3>
+              <ul class="companion__way-of-movement">
+                <li><span class="companion__way-of-movement--active"></span></li>
+                <li><span></span></li>
+                <li><span class="companion__way-of-movement--active"></span></li>
+                <li><span></span></li>
+              </ul>
+            </div>
+            <table class="companion__table">
+              <tr>
+                <td>левел:</td>
+              </tr>
+              <tr>
+                <td>25</td>
+              </tr>
+            </table>
+            <a href="#" class="companion__button-call">Позвать!</a>
+          </div>
+        </li>
+        <li class="companion__item">
+          <!--Псевдоэлемент красная точка-->
+          <a href="#">
+            <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
+            <cite class="companion__name">Лариса Рогова</cite>
+          </a>
+          <p class="companion__text-like">
+            <!--Псевдоэлемент лайк-->23</p>
+          <p class="companion__text-hashtag">#образование#карьера#учеба#линкедин</p>
+          <div>
+            <h3>Хочет посетить:</h3>
+            <ul class="companion__list-images-flag">
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Великобритания
+              </li>
+              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Германия</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h3>Транспорт</h3>
+              <ul class="companion__way-of-movement">
+                <li><span class="companion__way-of-movement--active"></span></li>
+                <li><span class="companion__way-of-movement--active"></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+              </ul>
+            </div>
+            <table class="companion__table">
+              <tr>
+                <td>левел:</td>
+              </tr>
+              <tr>
+                <td>50</td>
+              </tr>
+            </table>
+            <a href="#" class="companion__button-call">Позвать!</a>
+          </div>
+        </li>
+      </ul>
+      <button class="companion__button-show-more"><!--Декоративная картинка-->Показать ещё</button>
+      <ul>
+        <li><button class="companion__button-show-next-page"><!--Декоративная картинка--></button></li>
+        <li><button class="companion__button-show-previous-page"><!--Декоративная картинка--></button></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="#">
+      <img class="page-footer__logo-image" src="#" width="10" height="10" alt="Логотип Погнали?">
+    </a>
+
+    <ul class="page-footer__list social-networks__list">
+      <li class="page-footer__item social-networks__item">
+        <a href="https://ru-ru.facebook.com/" aria-label="Facebook">
+          <!--Картинка вставленая через CSS-->
+        </a>
+      </li>
+      <li class="page-footer__item social-networks__item">
+        <a href="https://vk.com/feed" aria-label="В контакте">
+          <!--Картинка вставленая через CSS-->
+        </a>
+      </li>
+      <li class="page-footer__item social-networks__item">
+        <a href="https://www.instagram.com/?hl=ru" aria-label="Instagram">
+          <!--Картинка вставленая через CSS-->
+        </a>
+      </li>
+    </ul>
+
+    <p>Разработано</p>
+
+    <a><img src="#" width="10" height="10" alt="Логотип HTML Academy"></a>
+  </footer>
+
+  <section class="visually-hidden business-tariff">
+    <h2 class="business-tariff__subtitle">Бизнес-тарифы</h2>
+    <ul class="business-tariff__list">
+      <li class="business-tariff__item">Реклама у блоггера 300 000 руб./пост</li>
+      <li class="business-tariff__item">Накрутка подписчиков от 1 руб./шт</li>
+      <li class="business-tariff__item">Лайки от ботов от 20 коп./лайк</li>
+      <li class="business-tariff__item">Ваш продакт-плейсмент Индивидуально</li>
+    </ul>
+    <button class="business-tariff__button-close">Закрыть окно</button>
+  </section>
+
+</body>
+
+</html>
