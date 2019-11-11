@@ -13,7 +13,7 @@
         alt="Логотип Погнали?">
     </a>
     <div class="wrapper">
-      <button class="toogle"></button>
+      <button class="toogle" aria-label="Кнопка открывающая выпадающее меню"></button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -26,37 +26,33 @@
             <a href="#">Попутчики</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login" href="#">Авторизация</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__tel" href="tel:+88005558628">
-              <!--Псевдоэлемент иконка телефона-->
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__letter" href="#">
-              <!--Псевдоэлемент иконка письма-->
-              Mail@htmlacademy.ru
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list social-networks__list">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__login" href="#">
+            Авторизация
+          </a>
+          <a class="main-nav__tel" href="tel:+88005558628">
+            <!--Псевдоэлемент иконка телефона-->
+            8 800 555-86-28
+          </a>
+          <a class="main-nav__letter" href="mailto:Mail@htmlacademy.ru">
+            <!--Псевдоэлемент иконка письма-->
+            Mail@htmlacademy.ru
+          </a>
+        </div>
+        <ul class="main-nav__list social-networks social-networks__list">
           <li class="social-networks__item">
             <a href="https://ru-ru.facebook.com/" aria-label="Facebook">
-              <!--Картинка вставленая через CSS-->
+              <!--Картинка вставленая через svg-->
             </a>
           </li>
           <li class="social-networks__item">
             <a href="https://vk.com/feed" aria-label="В контакте">
-              <!--Картинка вставленая через CSS-->
+              <!--Картинка вставленая через svg-->
             </a>
           </li>
           <li class="social-networks__item">
             <a href="https://www.instagram.com/?hl=ru" aria-label="Instagram">
-              <!--Картинка вставленая через CSS-->
+              <!--Картинка вставленая через svg-->
             </a>
           </li>
         </ul>
@@ -65,102 +61,135 @@
   </header>
   <main>
     <h1>Попутчики</h1>
-    <section class="companion">
+    <section class="companion-catalog companion">
       <h2 class="companion__subtitle">Попутчики</h2>
-      <p class="companion__text">Все мы индивидуальны и у каждого
+      <p class="companion__text">
+        Все мы индивидуальны и у каждого
         свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,
         другому маршрут для хайкинга.
       </p>
-      <p class="companion__text"><b>Теперь можно легко найти
+      <p class="companion__text">
+        <b>
+          Теперь можно легко найти
           единомышленников!
-        </b></p>
-      <ul class="companion-catalog__list companion__list">
+        </b>
+      </p>
+      <ul class="companion-catalog companion-catalog__list companion companion__list">
         <li class="companion__item">
-          <!--Псевдоэлемент красная точка-->
           <a href="#">
             <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
-            <cite class="companion__name">Таня Фирсова</cite>
           </a>
+          <a class="companion__name">Таня Фирсова</a>
+          <!--Псевдоэлемент красная точка-->
           <p class="companion__text-like">
-            <!--Псевдоэлемент лайк-->1,5 м</p>
-          <p class="companion__text-hashtag">#ЗОЖ#ПП#Фитнес#пляж#авокадо#смузи</p>
-          <div>
-            <h3>Хочет посетить:</h3>
+            <button class="companion__button-like" aria-label="Кнопка мне нравится"></button>
+            1,5 м
+          </p>
+          <p class="companion__text-hashtag">
+            #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+          </p>
+          <div class="companion__wrapper">
+            <h3 class="companion__caption-three">Хочет посетить:</h3>
             <ul class="companion__list-images-flag">
-              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Шри-Ланка</li>
-              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Таиланд</li>
-              <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Сейшелы</li>
+              <li>
+                <img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">
+                Шри-Ланка
+              </li>
+              <li>
+                <img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">
+                Таиланд
+              </li>
+              <li>
+                <img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">
+                Сейшелы
+              </li>
             </ul>
           </div>
           <div>
             <div>
-              <h3>Транспорт</h3>
-              <ul class="companion__way-of-movement">
-                <li><span class="companion__way-of-movement--active"></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
+              <h3 class="companion-catalog__caption-three">Транспорт</h3>
+              <ul class="companion__list-way-of-movement">
+                <li>
+                  <img class="companion__images-aircraft--active" src="#" width="10" height="10"
+                    alt="Изображение самолёта">
+                </li>
+                <li>
+                  <img class="companion__images-bus" src="#" width="10" height="10" alt="Изображение автобуса">
+                </li>
+                <li>
+                  <img class="companion__images-cyclist" src="#" width="10" height="10" alt="Изображение велосипедиста">
+                </li>
+                <li>
+                  <img class="companion__images-pedestrian" src="#" width="10" height="10" alt="Изображение пешехода">
+                </li>
               </ul>
             </div>
-            <table class="companion__table">
-              <tr>
-                <td>левел:</td>
-              </tr>
-              <tr>
-                <td>99</td>
-              </tr>
-            </table>
+            <div class="companion-catalog__level">
+              <h3 class="companion__caption-three">левел:</h3>
+              <span>99</span>
+            </div>
             <a href="#" class="companion__button-call">Позвать!</a>
           </div>
         </li>
         <li class="companion__item">
-          <!--Псевдоэлемент красная точка-->
           <a href="#">
             <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
-            <cite class="companion__name">Петя Демин</cite>
           </a>
+          <a class="companion__name">Петя Демин</a>
+          <!--Псевдоэлемент красная точка-->
           <p class="companion__text-like">
-            <!--Псевдоэлемент лайк-->150</p>
-          <p class="companion__text-hashtag">#бургер#бар#футбол#концерт#крафт</p>
+            <button class="companion__button-like" aria-label="Кнопка мне нравится"></button>
+            150
+          </p>
+          <p class="companion__text-hashtag">#бургер #бар #футбол #концерт #крафт</p>
           <div>
-            <h3>Хочет посетить:</h3>
+            <h3 class="companion-catalog__caption-three">Хочет посетить:</h3>
             <ul class="companion__list-images-flag">
               <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Бельгия</li>
-              <li><img class="companion__images-flag images-flag-czechia" src="#" width="10" height="10" alt="Флаг страны">Чехия</li>
+              <li><img class="companion__images-flag images-flag-czechia" src="#" width="10" height="10"
+                  alt="Флаг страны">Чехия</li>
             </ul>
           </div>
           <div>
             <div>
-              <h3>Транспорт</h3>
-              <ul class="companion__way-of-movement">
-                <li><span class="companion__way-of-movement--active"></span></li>
-                <li><span class="companion__way-of-movement--active"></span></li>
-                <li><span></span></li>
-                <li><span class="companion__way-of-movement--active"></span></li>
+              <h3 class="companion__caption-three">Транспорт</h3>
+              <ul class="companion__list-way-of-movement">
+                <li>
+                  <img class="companion__images-aircraft--active" src="#" width="10" height="10"
+                    alt="Изображение самолёта">
+                </li>
+                <li>
+                  <img class="companion__images-bus--active" src="#" width="10" height="10" alt="Изображение автобуса">
+                </li>
+                <li>
+                  <img class="companion__images-cyclist" src="#" width="10" height="10" alt="Изображение велосипедиста">
+                </li>
+                <li>
+                  <img class="companion__images-pedestrian--active" src="#" width="10" height="10"
+                    alt="Изображение пешехода">
+                </li>
               </ul>
             </div>
-            <table class="companion__table">
-              <tr>
-                <td>левел:</td>
-              </tr>
-              <tr>
-                <td>80</td>
-              </tr>
-            </table>
+            <div class="companion-catalog__level">
+              <h3 class="companion-catalog__caption-three">левел:</h3>
+              <span>80</span>
+            </div>
             <a href="#" class="companion__button-call">Позвать!</a>
           </div>
         </li>
         <li class="companion__item">
-          <!--Псевдоэлемент красная точка-->
           <a href="#">
             <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
-            <cite class="companion__name">Марк Смолов</cite>
           </a>
+          <a class="companion__name">Марк Смолов</a>
+          <!--Псевдоэлемент красная точка-->
           <p class="companion__text-like">
-            <!--Псевдоэлемент лайк-->1700</p>
-          <p class="companion__text-hashtag">#рэп#тату#хайпбист#кроссовки#суприм</p>
+            <button class="companion__button-like" aria-label="Кнопка мне нравится"></button>
+            1700
+          </p>
+          <p class="companion__text-hashtag">#рэп #тату #хайпбист #кроссовки #суприм</p>
           <div>
-            <h3>Хочет посетить:</h3>
+            <h3 class="companion__caption-three">Хочет посетить:</h3>
             <ul class="companion__list-images-flag">
               <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">США</li>
               <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Австралия</li>
@@ -169,36 +198,44 @@
           </div>
           <div>
             <div>
-              <h3>Транспорт</h3>
-              <ul class="companion__way-of-movement">
-                <li><span class="companion__way-of-movement--active"></span></li>
-                <li><span></span></li>
-                <li><span class="companion__way-of-movement--active"></span></li>
-                <li><span></span></li>
+              <h3 class="companion-catalog__caption-three">Транспорт</h3>
+              <ul class="companion__list-way-of-movement">
+                <li>
+                  <img class="companion__images-aircraft--active" src="#" width="10" height="10"
+                    alt="Изображение самолёта">
+                </li>
+                <li>
+                  <img class="companion__images-bus" src="#" width="10" height="10" alt="Изображение автобуса">
+                </li>
+                <li>
+                  <img class="companion__images-cyclist--active" src="#" width="10" height="10"
+                    alt="Изображение велосипедиста">
+                </li>
+                <li>
+                  <img class="companion__images-pedestrian" src="#" width="10" height="10" alt="Изображение пешехода">
+                </li>
               </ul>
             </div>
-            <table class="companion__table">
-              <tr>
-                <td>левел:</td>
-              </tr>
-              <tr>
-                <td>25</td>
-              </tr>
-            </table>
+            <div class="companion-catalog__level">
+              <h3 class="companion-catalog__caption-three">левел:</h3>
+              <span>25</span>
+            </div>
             <a href="#" class="companion__button-call">Позвать!</a>
           </div>
         </li>
         <li class="companion__item">
-          <!--Псевдоэлемент красная точка-->
           <a href="#">
             <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
-            <cite class="companion__name">Лариса Рогова</cite>
           </a>
+          <a class="companion__name companion__name--active">Лариса Рогова</a>
+          <!--Псевдоэлемент зелёная точка-->
           <p class="companion__text-like">
-            <!--Псевдоэлемент лайк-->23</p>
-          <p class="companion__text-hashtag">#образование#карьера#учеба#линкедин</p>
+            <button class="companion__button-like" aria-label="Кнопка мне нравится"></button>
+            23
+          </p>
+          <p class="companion__text-hashtag">#образование #карьера #учеба #линкедин</p>
           <div>
-            <h3>Хочет посетить:</h3>
+            <h3 class="companion-catalog__caption-three">Хочет посетить:</h3>
             <ul class="companion__list-images-flag">
               <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">Великобритания
               </li>
@@ -207,30 +244,45 @@
           </div>
           <div>
             <div>
-              <h3>Транспорт</h3>
-              <ul class="companion__way-of-movement">
-                <li><span class="companion__way-of-movement--active"></span></li>
-                <li><span class="companion__way-of-movement--active"></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
+              <h3 class="companion__caption-three">Транспорт</h3>
+              <ul class="companion__list-way-of-movement">
+                <li>
+                  <img class="companion__images-aircraft--active" src="#" width="10" height="10"
+                    alt="Изображение самолёта">
+                </li>
+                <li>
+                  <img class="companion__images-bus--active" src="#" width="10" height="10" alt="Изображение автобуса">
+                </li>
+                <li>
+                  <img class="companion__images-cyclist" src="#" width="10" height="10" alt="Изображение велосипедиста">
+                </li>
+                <li>
+                  <img class="companion__images-pedestrian" src="#" width="10" height="10" alt="Изображение пешехода">
+                </li>
               </ul>
             </div>
-            <table class="companion__table">
-              <tr>
-                <td>левел:</td>
-              </tr>
-              <tr>
-                <td>50</td>
-              </tr>
-            </table>
+            <div class="companion-catalog__level">
+              <h3 class="companion-catalog__caption-three">левел:</h3>
+              <span>50</span>
+            </div>
             <a href="#" class="companion__button-call">Позвать!</a>
           </div>
         </li>
       </ul>
-      <button class="companion__button-show-more"><!--Декоративная картинка-->Показать ещё</button>
+      <button class="companion__button-show-more button-show-more">
+        <!--Декоративная картинка-->Показать ещё
+      </button>
       <ul>
-        <li><button class="companion__button-show-next-page"><!--Декоративная картинка--></button></li>
-        <li><button class="companion__button-show-previous-page"><!--Декоративная картинка--></button></li>
+        <li>
+          <a class="companion__button-show-next-page">
+            <!--Декоративная картинка-->
+          </a>
+          </li>
+        <li>
+          <a class="companion__button-show-previous-page">
+            <!--Декоративная картинка-->
+          </a>
+        </li>
       </ul>
     </section>
   </main>
@@ -242,17 +294,17 @@
     <ul class="page-footer__list social-networks__list">
       <li class="page-footer__item social-networks__item">
         <a href="https://ru-ru.facebook.com/" aria-label="Facebook">
-          <!--Картинка вставленая через CSS-->
+          <!--Картинка вставленая через SVG-->
         </a>
       </li>
       <li class="page-footer__item social-networks__item">
         <a href="https://vk.com/feed" aria-label="В контакте">
-          <!--Картинка вставленая через CSS-->
+          <!--Картинка вставленая через SVG-->
         </a>
       </li>
       <li class="page-footer__item social-networks__item">
         <a href="https://www.instagram.com/?hl=ru" aria-label="Instagram">
-          <!--Картинка вставленая через CSS-->
+          <!--Картинка вставленая через SVG-->
         </a>
       </li>
     </ul>

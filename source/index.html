@@ -13,7 +13,7 @@
         alt="Логотип Погнали?">
     </a>
     <div class="wrapper">
-      <button class="toogle"></button>
+      <button class="toogle" aria-label="Кнопка открывающая выпадающее меню"></button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -26,37 +26,33 @@
             <a href="#">Попутчики</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login" href="#">Авторизация</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__tel" href="tel:+88005558628">
-              <!--Псевдоэлемент иконка телефона-->
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__letter" href="#">
-              <!--Псевдоэлемент иконка письма-->
-              Mail@htmlacademy.ru
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list social-networks__list">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__login" href="#">
+            Авторизация
+          </a>
+          <a class="main-nav__tel" href="tel:+88005558628">
+            <!--Псевдоэлемент иконка телефона-->
+            8 800 555-86-28
+          </a>
+          <a class="main-nav__letter" href="mailto:Mail@htmlacademy.ru">
+            <!--Псевдоэлемент иконка письма-->
+            Mail@htmlacademy.ru
+          </a>
+        </div>
+        <ul class="main-nav__list social-networks social-networks__list">
           <li class="social-networks__item">
             <a href="https://ru-ru.facebook.com/" aria-label="Facebook">
-              <!--Картинка вставленая через CSS-->
+              <!--Картинка вставленая через svg-->
             </a>
           </li>
           <li class="social-networks__item">
             <a href="https://vk.com/feed" aria-label="В контакте">
-              <!--Картинка вставленая через CSS-->
+              <!--Картинка вставленая через svg-->
             </a>
           </li>
           <li class="social-networks__item">
             <a href="https://www.instagram.com/?hl=ru" aria-label="Instagram">
-              <!--Картинка вставленая через CSS-->
+              <!--Картинка вставленая через svg-->
             </a>
           </li>
         </ul>
@@ -99,114 +95,171 @@
     </section>
 
     <section class="about-the-service">
-      <h2 class="about-the-service__subtitle">О сервисе</h2>
-      <p class="about-the-service__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+      <h2 class="index__subtitle-two">О сервисе</h2>
+      <p class="about-the-service__text">
+        Любое путешествие веселее с попутчиками,
+        которые на одной волне с тобой!
         Делитесь своими идеями путешествий и
-        черпайте вдохновение в чужих.</p>
-      <p class="about-the-service__text"><b>А если найдете кого-то близкого по духу - скорее зовите в совместный
-          трип!</b></p>
+        черпайте вдохновение в чужих.
+      </p>
+      <p class="about-the-service__text">
+        <b>
+          А если найдете кого-то близкого по духу
+          - скорее зовите в совместный
+          трип!
+        </b>
+      </p>
     </section>
 
     <section class="direction">
-      <h2 class="direction__subtitle">Направления</h2>
-      <p class="direction__text">Мы не продаем туры и ничего не рекламируем.
-        Люди сами пишут о странах, куда хотели бы отправиться и чем можно там
+      <h2 class="index__subtitle-two">Направления</h2>
+      <p class="direction__text">
+        Мы не продаем туры и ничего не рекламируем.
+        Люди сами пишут о странах, куда хотели бы отправиться
+        и чем можно там
         заняться.
       </p>
       <ul class="direction__list">
         <li class="direction__item">
           <img class="direction__images-thai" src="#" width="10" height="10" alt="Изображение Таиланда">
-          <img class="direction__images-flag-thai images-flag-thai" src="#" width="10" height="10" alt="Изображение флага Таиланда">
+          <img class="direction__images-flag-thai images-flag-thai" src="#" width="10" height="10"
+            alt="Изображение флага Таиланда">
           <h3>Таиланд</h3>
           <span>
-            <!--Псевдоэлемент иконка-->18321</span>
-          <p>Джунгли зовут!</p>
+            <!--Псевдоэлемент иконка-->18321
+          </span>
+          <b>Джунгли зовут!</b>
         </li>
         <li class="direction__item">
           <img class="direction__images-france" src="#" width="10" height="10" alt="Изображение Франции">
-          <img class="direction__images-flag-france images-flag-france" src="#" width="10" height="10" alt="Изображение флага Франции">
+          <img class="direction__images-flag-france images-flag-france" src="#" width="10" height="10"
+            alt="Изображение флага Франции">
           <h3>Франция</h3>
           <span>
-            <!--Псевдоэлемент иконка-->12518</span>
-          <p>Трэ бьен, манифик!</p>
+            <!--Псевдоэлемент иконка-->12518
+          </span>
+          <b>Трэ бьен, манифик!</b>
         </li>
         <li class="direction__item">
           <img class="direction__images-czechia" src="#" width="10" height="10" alt="Изображение Чехии">
-          <img class="direction__images-flag-czechia images-flag-czechia" src="#" width="10" height="10" alt="Изображение флага Чехии">
+          <img class="direction__images-flag-czechia images-flag-czechia" src="#" width="10" height="10"
+            alt="Изображение флага Чехии">
           <h3>Чехия</h3>
           <span>
-            <!--Псевдоэлемент иконка-->5326</span>
-          <p>Закоулки старой Европы</p>
+            <!--Псевдоэлемент иконка-->5326
+          </span>
+          <b>Закоулки старой Европы</b>
         </li>
       </ul>
       <a href="form.html">Показать все
-        <!-- Псевдоэлемент триугольник--></a>
+        <!-- Псевдоэлемент триугольник-->
+      </a>
     </section>
 
-    <section class="companion">
-      <h2 class="companion__subtitle">Попутчики</h2>
-      <p class="companion__text">Все мы индивидуальны и у каждого
+    <section class="companion-index companion">
+      <h2 class="index__subtitle-two">Попутчики</h2>
+      <p class="companion__text">
+        Все мы индивидуальны и у каждого
         свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,
         другому маршрут для хайкинга.
       </p>
-      <p class="companion__text"><b>Теперь можно легко найти
+      <p class="companion__text">
+        <b>
+          Теперь можно легко найти
           единомышленников!
-        </b></p>
+        </b>
+      </p>
       <ul class="companion-index__list companion__list">
         <li class="companion__item">
           <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
-          <table class="companion__table">
-            <tr>
-              <td>99</td>
-            </tr>
-            <tr>
-              <td>level</td>
-            </tr>
-          </table>
+          <div class="companion-index__level">
+            <h3 class="companion-index__caption-three">левел:</h3>
+            <span>99</span>
+          </div>
           <ul class="companion__list-images-flag">
-            <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны"></li>
-            <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны"></li>
-            <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны"></li>
+            <li>
+              <img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">
+            </li>
+            <li>
+              <img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">
+            </li>
+            <li>
+              <img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">
+            </li>
           </ul>
-          <cite class="companion__name">Таня Фирсова</cite>
-          <p class="companion__quote">#ЗОЖ#ПП#Фитнес#пляж#авокадо#смузи</p>
-          <ul class="companion__way-of-movement">
-            <li><span class="companion__way-of-movement--active"></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-          </ul>
+          <a class="companion__name">Таня Фирсова</a>
+          <!--Псевдо элемент красная точка-->
+          <p class="companion__text-hashtag">
+            #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+          </p>
+          <div>
+            <h3>Транспорт</h3>
+            <ul class="companion__list-way-of-movement">
+              <li>
+                <img class="companion__images-aircraft--active" src="#" width="10" height="10"
+                  alt="Изображение самолёта">
+              </li>
+              <li>
+                <img class="companion__images-bus" src="#" width="10" height="10" alt="Изображение автобуса">
+              </li>
+              <li>
+                <img class="companion__images-cyclist" src="#" width="10" height="10" alt="Изображение велосипедиста">
+              </li>
+              <li>
+                <img class="companion__images-pedestrian" src="#" width="10" height="10" alt="Изображение пешехода">
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="companion__item">
           <img class="companion__images-avatar" src="#" width="10" height="10" alt="Аватар попутчика">
-          <table class="companion__table">
-              <tr>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>level</td>
-              </tr>
-            </table>
+          <div class="companion-index__level">
+            <h3 class="companion-index__caption-three">левел:</h3>
+            <span>80</span>
+          </div>
           <ul class="companion__list-images-flag">
-            <li><img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны"></li>
-            <li><img class="companion__images-flag-czechia images-flag-czechia" src="#" width="10" height="10" alt="Флаг страны"></li>
+            <li>
+              <img class="companion__images-flag" src="#" width="10" height="10" alt="Флаг страны">
+            </li>
+            <li>
+              <img class="companion__images-flag-czechia images-flag-czechia" src="#" width="10" height="10"
+                alt="Флаг страны">
+            </li>
           </ul>
-          <cite class="companion__name">Петя Демин</cite>
-          <p class="companion__quote">#бургер#бар#футбол#концерт#крафт</p>
-          <ul class="companion__way-of-movement">
-            <li><span class="companion__way-of-movement--active"></span></li>
-            <li><span class="companion__way-of-movement--active"></span></li>
-            <li><span></span></li>
-            <li><span class="companion__way-of-movement--active"></span></li>
-          </ul>
+          <a class="companion__name companion__name--acitve">Петя Демин</a>
+          <!--Псевдоэлемент зелёная точка-->
+          <p class="companion__text-hashtag">
+            #бургер #бар #футбол #концерт #крафт
+          </p>
+          <div>
+            <h3>Транспорт</h3>
+            <ul class="companion__list-way-of-movement">
+              <li>
+                <img class="companion__images-aircraft--active" src="#" width="10" height="10"
+                  alt="Изображение самолёта">
+              </li>
+              <li>
+                <img class="companion__images-bus--active" src="#" width="10" height="10" alt="Изображение автобуса">
+              </li>
+              <li>
+                <img class="companion__images-cyclist" src="#" width="10" height="10" alt="Изображение велосипедиста">
+              </li>
+              <li>
+                <img class="companion__images-pedestrian--active" src="#" width="10" height="10"
+                  alt="Изображение пешехода">
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
-      <a href="catalog.html">Показать всех
-        <!--Псевдо элемент--></a>
+      <a href="catalog.html">
+        Показать всех
+        <!--Псевдо элемент-->
+      </a>
     </section>
 
     <section class="add-profile">
-      <h2 class="add-profile__subtitle">Добавьте свой профиль</h2>
+      <h2 class="index__subtitle-two">Добавьте свой профиль</h2>
       <!--Декоративная картинка-->
       <ol class="add-profile__list">
         <li class="add-profile__item">Базовое размещение Бесплатно</li>
@@ -224,17 +277,17 @@
     <ul class="page-footer__list social-networks__list">
       <li class="page-footer__item social-networks__item">
         <a href="https://ru-ru.facebook.com/" aria-label="Facebook">
-          <!--Картинка вставленая через CSS-->
+          <!--Картинка вставленая через SVG-->
         </a>
       </li>
       <li class="page-footer__item social-networks__item">
         <a href="https://vk.com/feed" aria-label="В контакте">
-          <!--Картинка вставленая через CSS-->
+          <!--Картинка вставленая через SVG-->
         </a>
       </li>
       <li class="page-footer__item social-networks__item">
         <a href="https://www.instagram.com/?hl=ru" aria-label="Instagram">
-          <!--Картинка вставленая через CSS-->
+          <!--Картинка вставленая через SVG-->
         </a>
       </li>
     </ul>
