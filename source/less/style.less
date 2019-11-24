@@ -1,58 +1,23 @@
-@font-face {
-  font-family: "Blogger Sans";
-  src: url("../fonts/bloggersans-light.woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Blogger Sans";
-  src: url("../fonts/bloggersans-regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Blogger Sans";
-  src: url("../fonts/bloggersans-medium.woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Blogger Sans";
-  src: url("../fonts/bloggersans-bold.woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-body {
-  background-color: #161c35;
-}
-
-.body-catalog {
-  background-color: #edeff6;
-}
-
+@import "font.less";
+@import "mixins.less";
+@import "base.less";
+@import "blocks/body-catalog.less";
 @import "variables.less";
+@import "blocks/index.less";
 @import "blocks/page-header.less";
 @import "blocks/main-nav.less";
+@import "blocks/site-list.less";
 @import "blocks/social-networks.less";
-@import "blocks/page-main.less";
+@import "blocks/page-subtitle.less";
 @import "blocks/user-list.less";
 @import "blocks/comment.less";
 @import "blocks/scope.less";
 @import "blocks/about-the-service.less";
 @import "blocks/direction.less";
 @import "blocks/companion.less";
+@import "blocks/companion-index.less";
+@import "blocks/companion-catalog.less";
+@import "blocks/button-show-more.less";
 @import "blocks/add-profile.less";
 @import "blocks/page-footer.less";
 @import "blocks/business-tariff.less";
-
-.companion__images-transport {
-  opacity: 0.15;
-}
-
-.companion__images-transport--active {
-  opacity: 1;
-}
