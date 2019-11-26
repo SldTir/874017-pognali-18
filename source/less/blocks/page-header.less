@@ -1,3 +1,24 @@
 .page-header {
-  background-color: #161c36;
+  display: flex;
+
+  min-height: 65px;
+
+  background-color: green;
+  opacity: 0.3;
+
+  .page-header__logo {
+    height: 70px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    min-height: 910px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    min-height: 135px;
+  }
 }
