@@ -1,17 +1,55 @@
 .about-the-service {
+  width: 270px;
+  min-height: 270px;
+  margin: auto;
+  margin-top: 50px;
+
   background-image: url("../../img/about-mobile@1x.png");
   background-repeat: no-repeat;
-}
+  background-color: red;
+  opacity: 0.3;
 
-.about-the-service p:nth-child(2) {
-  .light(16px, 22px);
-}
+  .about-the-service__wrapper {
+    width: 225px;
+    min-height: 240px;
+    margin-top: 60px;
+    margin-left: 15px;
 
-.about-the-service p:nth-child(3) {
+    background-color: white;
+    opacity: 0.6;
+  }
+
+  p:nth-child(2) {
+    .light(16px, 22px);
+  }
+
+
+  p:nth-child(3) {
   .bold(16px, 22px);
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .about-the-service {
+    width: 688px;
+    min-height: 690px;
+    margin: auto;
+    margin-top: 50px;
+
+    background-image: url("../../img/about-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-color: red;
+    opacity: 0.3;
+
+    p:nth-child(2) {
+      .light(16px, 22px);
+    }
+
+
+    p:nth-child(3) {
+    .bold(16px, 22px);
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {

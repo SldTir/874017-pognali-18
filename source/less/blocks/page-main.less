@@ -1,3 +1,59 @@
 .page-main {
-  background-color: #161c36;
+  width: 320px;
+  margin: auto;
+
+  background-color: green;
+  opacity: 0.3;
+
+
+  .page-main__subtitle-comment {
+    display: flex;
+    flex-direction: column;
+
+    width: 270px;
+    min-height: 590px;
+    margin: auto;
+
+    background-color: red;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: @tablet-width;
+    margin: auto;
+
+    background-color: green;
+    opacity: 0.3;
+
+
+    .page-main__subtitle-comment {
+      display: flex;
+      flex-direction: column;
+
+      width: 698px;
+      min-height: 580px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: @desktop-width;
+    margin: auto;
+
+    background-color: green;
+    opacity: 0.3;
+
+
+    .page-main__subtitle-comment {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      width: 1320px;
+      min-height: 330px;
+    }
+  }
 }

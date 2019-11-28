@@ -1,24 +1,104 @@
 .page-header {
+  position: relative;
   display: flex;
 
+  margin: auto;
+
+  width: 320px;
   min-height: 65px;
 
   background-color: green;
   opacity: 0.3;
 
   .page-header__logo {
+    width: 150px;
     height: 70px;
+
+    background-color: red;
+    opacity: 0.4;
+  }
+
+  .toggle {
+    padding: 0;
+    margin: 0;
+    background-color: red;
+    opacity: 0.4;
+  }
+
+  .page-header__user-list {
+    position: absolute;
+    top: 438px;
+    left: 5px;
+
+    width: 270px;
+    min-height: 50px;
+
+    display: flex;
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    min-height: 910px;
+    width: @tablet-width;
+    min-height: 130px;
+
+    .page-header__wrapper-nav{
+      width: 695px;
+      min-height: 60px;
+
+      margin: auto;
+      margin-top: 35px;
+
+      background-color: red;
+      opacity: 0.4;
+    }
+
+    .page-header__logo {
+      width: 150px;
+      height: 70px;
+
+      background-color: red;
+      opacity: 0.4;
+    }
+
+    .toggle {
+      padding: 0;
+      margin: 0;
+      background-color: red;
+      opacity: 0.4;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    min-height: 135px;
+    width: @desktop-width;
+    min-height: 130px;
+
+    .page-header__wrapper-nav{
+      width: 1320px;
+      min-height: 60px;
+
+      margin: auto;
+      margin-top: 45px;
+
+      background-color: red;
+      opacity: 0.4;
+    }
+
+    .page-header__logo {
+      width: 150px;
+      height: 70px;
+
+      background-color: red;
+      opacity: 0.4;
+    }
+
+    .toggle {
+      padding: 0;
+      margin: 0;
+      background-color: red;
+      opacity: 0.4;
+    }
   }
 }
