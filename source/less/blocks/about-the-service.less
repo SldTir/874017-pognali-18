@@ -1,23 +1,11 @@
 .about-the-service {
-  width: 270px;
-  min-height: 270px;
+  width: 225px;
+  min-height: 240px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 15px;
 
-  background-image: url("../../img/about-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-color: red;
-  opacity: 0.3;
-
-  .about-the-service__wrapper {
-    width: 225px;
-    min-height: 240px;
-    margin-top: 60px;
-    margin-left: 15px;
-
-    background-color: white;
-    opacity: 0.6;
-  }
+  background-color: white;
+  opacity: 0.6;
 
   p:nth-child(2) {
     .light(16px, 22px);
@@ -31,15 +19,14 @@
 
 @media (min-width: @tablet-width) {
   .about-the-service {
-    width: 688px;
-    min-height: 690px;
-    margin: auto;
-    margin-top: 50px;
+    width: 310px;
+    min-height: 570px;
+    margin: 0;
+    margin-top: 60px;
+    margin-left: 30px;
 
-    background-image: url("../../img/about-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-color: red;
-    opacity: 0.3;
+    background-color: white;
+    opacity: 0.6;
 
     p:nth-child(2) {
       .light(16px, 22px);
@@ -53,4 +40,23 @@
 }
 
 @media (min-width: @desktop-width) {
+  .about-the-service {
+    width: 630px;
+    min-height: 470px;
+    margin: 0;
+    margin-top: 80px;
+    margin-left: 60px;
+
+    background-color: white;
+    opacity: 0.6;
+
+    p:nth-child(2) {
+      .light(16px, 22px);
+    }
+
+
+    p:nth-child(3) {
+    .bold(16px, 22px);
+    }
+  }
 }

@@ -7,14 +7,14 @@
   width: 320px;
   min-height: 65px;
 
-  background-color: green;
+  background-color: red;
   opacity: 0.3;
 
   .page-header__logo {
     width: 150px;
     height: 70px;
 
-    background-color: red;
+    background-color: white;
     opacity: 0.4;
   }
 
@@ -34,6 +34,8 @@
     min-height: 50px;
 
     display: flex;
+    background-color: white;
+    opacity: 0.4;
   }
 }
 
@@ -43,8 +45,11 @@
     min-height: 130px;
 
     .page-header__wrapper-nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       width: 695px;
-      min-height: 60px;
+      min-height: 40px;
 
       margin: auto;
       margin-top: 35px;
@@ -54,10 +59,11 @@
     }
 
     .page-header__logo {
-      width: 150px;
-      height: 70px;
+      width: 180px;
+      height: 50px;
+      margin-top: px;
 
-      background-color: red;
+      background-color: white;
       opacity: 0.4;
     }
 
@@ -66,6 +72,20 @@
       margin: 0;
       background-color: red;
       opacity: 0.4;
+    }
+
+    .page-header__user-list {
+      position: static;
+      top: 0px;
+      left: 0px;
+
+      width: 195px;
+      min-height: 50px;
+
+      background-color: white;
+      opacity: 0.5;
+
+      .list-reset();
     }
   }
 }
@@ -73,24 +93,29 @@
 @media (min-width: @desktop-width) {
   .page-header {
     width: @desktop-width;
+    width: 1440px;
     min-height: 130px;
 
     .page-header__wrapper-nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       width: 1320px;
-      min-height: 60px;
+      min-height: 80px;
 
       margin: auto;
-      margin-top: 45px;
+      margin-top: 35px;
 
       background-color: red;
       opacity: 0.4;
     }
 
     .page-header__logo {
-      width: 150px;
-      height: 70px;
+      width: 205px;
+      height: 60px;
+      margin-top: 10px;
 
-      background-color: red;
+      background-color: white;
       opacity: 0.4;
     }
 
@@ -99,6 +124,22 @@
       margin: 0;
       background-color: red;
       opacity: 0.4;
+    }
+
+    .page-header__user-list {
+      position: static;
+      top: 0px;
+      left: 0px;
+
+      display: flex;
+      width: 290px;
+      min-height: 20px;
+      margin-right: auto;
+
+      background-color: white;
+      opacity: 0.5;
+
+      .list-reset();
     }
   }
 }

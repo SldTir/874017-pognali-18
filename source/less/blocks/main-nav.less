@@ -17,9 +17,37 @@
   .bold(16px, 22px);
   color: #192144;
 }
+.main-nav {
+  display: none;
+
+  width: 320px;
+  min-height: 568px;
+
+  margin: auto;
+
+  background-color: white;
+}
 
 @media (min-width: @tablet-width) {
+  .main-nav {
+    display: none;
+
+    width: @tablet-width;
+    min-height: 911px;
+
+    margin: auto;
+
+    background-color: white;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    display: flex;
+    width: 410px;
+    min-height: 45px;
+    margin-right: 150px;
+
+    background-color: white;
+  }
 }
