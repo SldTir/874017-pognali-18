@@ -4,9 +4,6 @@
   margin: auto;
   margin-top: 15px;
 
-  background-color: white;
-  opacity: 0.6;
-
   p:nth-child(2) {
     .light(16px, 22px);
   }
@@ -15,26 +12,42 @@
   p:nth-child(3) {
   .bold(16px, 22px);
   }
+
+  .about-the-service__more-detailed {
+    display: none;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .about-the-service {
     width: 310px;
-    min-height: 570px;
+    min-height: 370px;
     margin: 0;
     margin-top: 60px;
-    margin-left: 30px;
+    margin-left: 40px;
 
-    background-color: white;
-    opacity: 0.6;
+    color: white;
 
     p:nth-child(2) {
       .light(16px, 22px);
     }
 
-
     p:nth-child(3) {
     .bold(16px, 22px);
+    }
+
+    .about-the-service__more-detailed {
+      display: block;
+      width: 270px;
+      min-height: 60px;
+      border-radius: 30px;
+      text-align: center;
+      margin-top: 60px;
+
+      color: #192144;
+
+      background-color: #ffd74b;
     }
   }
 }
@@ -47,8 +60,7 @@
     margin-top: 80px;
     margin-left: 60px;
 
-    background-color: white;
-    opacity: 0.6;
+    color: white;
 
     p:nth-child(2) {
       .light(16px, 22px);
@@ -57,6 +69,19 @@
 
     p:nth-child(3) {
     .bold(16px, 22px);
+    }
+
+    .about-the-service__more-detailed {
+      display: block;
+      width: 270px;
+      min-height: 60px;
+      border-radius: 30px;
+      text-align: center;
+      margin-top: 60px;
+
+      color: #192144;
+
+      background-color: #ffd74b;
     }
   }
 }

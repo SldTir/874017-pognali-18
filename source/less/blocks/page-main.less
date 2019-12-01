@@ -2,20 +2,20 @@
   width: 320px;
   margin: auto;
 
-  background-color: green;
-  opacity: 0.3;
-
-
   .page-main__subtitle-comment {
     display: flex;
     flex-direction: column;
 
-    width: 270px;
+    width: 320px;
     min-height: 590px;
     margin: auto;
 
-    background-color: red;
-    opacity: 0.3;
+    background-color: #161c36;
+    background-image:
+    url('../../img/traveller-illustration-mobile@1x.png'),
+    url('../../img/globe-back-mobile@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
@@ -24,16 +24,20 @@
     width: @tablet-width;
     margin: auto;
 
-    background-color: green;
-    opacity: 0.3;
-
 
     .page-main__subtitle-comment {
       display: flex;
       flex-direction: column;
 
-      width: 698px;
+      width: @tablet-width;
       min-height: 580px;
+
+      background-color: #182044;
+      background-image:
+      url('../../img/traveller-illustration-tablet@1x.png'),
+      url('../../img/globe-back-tablet@1x.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
     }
   }
 }
@@ -43,59 +47,67 @@
     width: @desktop-width;
     margin: auto;
 
-    background-color: green;
-    opacity: 0.3;
-
 
     .page-main__subtitle-comment {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
 
-      width: 1320px;
+      width: @desktop-width;
       min-height: 330px;
+
+      background-color: #182044;
+      background-image:
+      url('../../img/traveller-illustration-desktop@1x.png'),
+      url('../../img/globe-back-desktop@1x.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
     }
   }
 }
 
 .page-main__about-the-service {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 320px;
   min-height: 270px;
   margin: auto;
-  margin-top: 50px;
+  color: white;
 
-  background-color: red;
-  opacity: 0.3;
-  background-image: url("../../img/about-mobile@1x.png");
-  background-repeat: no-repeat;
+  background-color: #192144;
+  border-radius: 0px 0px 30px 30px;
+
+  z-index: 10;
 
   @media (min-width: @tablet-width) {
   display: flex;
   flex-direction: column;
-  width: 688px;
-  min-height: 688px;
+  width: 768px;
+  min-height: 370px;
   margin: auto;
-  margin-top: 50px;
 
-  background-color: red;
-  opacity: 0.3;
-  background-image: url("../../img/about-mobile@1x.png");
+  background-image: url("../../img/about-desktop@1x.png");
   background-repeat: no-repeat;
+  background-color: #192144;
+  border-radius: 0px 0px 30px 30px;
+  background-size: 50%;
+  background-position: 90% 20%;
   }
 
   @media (min-width: @desktop-width) {
   display: flex;
   flex-direction: column;
-  width: 1320px;
+  width: 1440px;
   min-height: 700px;
   margin: auto;
-  margin-top: 160px;
 
-  background-color: red;
-  opacity: 0.3;
-  background-image: url("../../img/about-mobile@1x.png");
+  background-image: url("../../img/about-desktop@1x.png");
   background-repeat: no-repeat;
+  background-color: #192144;
+  border-radius: 0px 0px 30px 30px;
+  background-size: 46%;
+  background-position: 90% 20%;
   }
 }
