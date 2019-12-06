@@ -1,8 +1,6 @@
 .add-profile {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
   width: 320px;
   min-height: 415px;
   margin: auto;
@@ -27,14 +25,54 @@
     margin-left: 20px;
   }
 
+  .add-profile__number-table {
+    display: flex;
+    align-items: flex-start;
+
+    margin-top: 40px;
+  }
+
+  .add-profile__number-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35px;
+    min-height: 170px;
+
+    order: 2;
+  }
+
+  .add-profile__number-item {
+    width: 34px;
+    height: 34px;
+    padding-left: 13px;
+    padding-top: 8px;
+    margin-left: 47px;
+    color: white;
+    padding: auto;
+    box-sizing: border-box;
+
+    background-color: #ffa530;
+    border-radius: 50%;
+  }
+
+  .add-profile__number-item:nth-child(2) {
+    margin-top: 30px;
+    background-color: #ffbd30;
+  }
+
+  .add-profile__number-item:nth-child(3) {
+    margin-top: 30px;
+    background-color: #ffd74b;
+  }
+
   .add-profile__list {
-    width: 250px;
+    width: 2px;
     min-height: 210px;
     .light(16px, 22px);
     color: #717273;
 
     .list-reset();
-    margin-top: 40px;
     margin-left: 20px;
   }
 
@@ -42,7 +80,7 @@
     border-top: 1px solid #e1e3e9;
   }
 
-  .add-profile__item:last-child {
+  .add-profile__cell-bottom {
     border-bottom: 1px solid #e1e3e9;
   }
 
@@ -86,6 +124,44 @@
       margin-left: 100px;
     }
 
+    .add-profile__number-table {
+      display: flex;
+      align-items: flex-start;
+
+      margin-top: 15px;
+    }
+
+    .add-profile__number-list {
+      width: 70px;
+      min-height: 204px;
+
+      order: 0;
+    }
+
+    .add-profile__number-item {
+      width: 67px;
+      height: 67px;
+      padding-left: 13px;
+      padding-top: 8px;
+      margin-left: 47px;
+      color: white;
+      padding: auto;
+      box-sizing: border-box;
+
+      background-color: #ffa530;
+      border-radius: 50%;
+    }
+
+    .add-profile__number-item:nth-child(2) {
+      margin-top: 30px;
+      background-color: #ffbd30;
+    }
+
+    .add-profile__number-item:nth-child(3) {
+      margin-top: 30px;
+      background-color: #ffd74b;
+    }
+
     .add-profile__list {
       width: 688px;
       min-height: 190px;
@@ -93,7 +169,6 @@
       color: #717273;
 
       .list-reset();
-      margin-top: 15px;
       margin-left: 0;
     }
 
@@ -139,6 +214,20 @@
       margin-left: 420px;
     }
 
+    .add-profile__number-table {
+      display: flex;
+      align-items: flex-start;
+
+      margin-top: 120px;
+    }
+
+    .add-profile__number-list {
+      width: 70px;
+      min-height: 204px;
+
+      order: 0;
+    }
+
     .add-profile__list {
       width: 920px;
       min-height: 220px;
@@ -146,7 +235,6 @@
       color: #717273;
 
       .list-reset();
-      margin-top: 120px;
       margin-left: 60px;
     }
 
