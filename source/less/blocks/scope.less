@@ -4,6 +4,7 @@
   width: 320px;
   min-height: 330px;
   margin: auto;
+  margin-top: -185px;
 
   background-color: #161c35;
 
@@ -12,10 +13,41 @@
     .bold(18px, 18px);
     color: #161c35;
 
-    background-color: #ff8d30;
-
     .list-reset();
     margin: 0 auto;
+    margin-top: 210px;
+  }
+
+  .scope__item {
+    width: 270px;
+    min-height: 95px;
+    padding-top: 21px;
+    padding-left: 24px;
+
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    background-color: #ff8d30;
+  }
+
+  .scope__item:nth-child(1) {
+    z-index: 1;
+  }
+  .scope__item:nth-child(2) {
+    margin-top: -15px;
+    background-color: #ffa530;
+    z-index: 2;
+  }
+  .scope__item:nth-child(3) {
+    margin-top: -15px;
+    background-color: #ffbd30;
+    z-index: 3;
+  }
+  .scope__item:nth-child(4) {
+    margin-top: -15px;
+    min-height: 85px;
+    background-color: #ffd74b;
+    z-index: 4;
   }
 }
 
