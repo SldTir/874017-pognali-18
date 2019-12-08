@@ -1,18 +1,217 @@
-.companion-index__level {
-  background-color: #344a4c;
+.companion-index {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 1265px;
+  margin: auto;
+  margin-top: -35px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+
+  background-image:
+    url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
+  background-position: 90% 5%, 0% 15%;
+  background-repeat: no-repeat;
+  background-color: #192144;
+  z-index: 8;
+
+  border-radius: 0 0 30px 30px;
+
+  .companion-index__subtitle-two-text {
+    width: 220px;
+    min-height: 220px;
+    margin-top: 75px;
+    margin-left: 20px;
+  }
+
+  .companion-index__list {
+    width: 270px;
+    min-height: 870px;
+
+    .list-reset();
+    margin-top: 50px;
+  }
+
+  .companion-index__item {
+    margin-top: 15px;
+  }
+
+  .companion-index__level {
+    background-color: #344a4c;
+  }
+
+  .companion-index__caption-three {
+    .bloggersans-regular(14px, 14px);
+    color: #ffffff;
+  }
+
+  .companion-index__level-number {
+    .bold(24px, 24px);
+    color: #ffffff;
+  }
+
+  .companion-index__name {
+    .bold(21px, 21px);
+    color: #1d2e5b;
+  }
+
+  .companion__show-all {
+    width: 270px;
+    min-height: 65px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+    box-sizing: border-box;
+  }
 }
 
-.companion-index__caption-three {
-  .bloggersans-regular(14px, 14px);
-  color: #ffffff;
+@media (min-width: @tablet-width) {
+  .companion-index {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    min-height: 1200px;
+    margin: auto;
+    margin-top: -35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+
+    background-image:
+      url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-desktop@1x.png");
+    background-position: 0% 25%, 90% 5%;
+    background-repeat: no-repeat;
+    background-color: #192144;
+    z-index: 8;
+
+    .companion-index__subtitle-two-text {
+      width: 435px;
+      min-height: 335px;
+      margin-top: 80px;
+      margin-left: 30px;
+    }
+
+    .companion-index__list {
+      display: flex;
+      width: 640px;
+      min-height: 500px;
+
+      .list-reset();
+      margin: auto;
+      margin-top: 0;
+    }
+
+    .companion-index__item {
+      margin-top: 0;
+      margin-left: 10px;
+    }
+
+    .companion-index__level {
+      background-color: #344a4c;
+    }
+
+    .companion-index__caption-three {
+      .bloggersans-regular(14px, 14px);
+      color: #ffffff;
+    }
+
+    .companion-index__level-number {
+      .bold(24px, 24px);
+      color: #ffffff;
+    }
+
+    .companion-index__name {
+      .bold(21px, 21px);
+      color: #1d2e5b;
+    }
+
+    .companion__show-all {
+      width: 618px;
+      min-height: 80px;
+      margin: auto;
+      margin-top: -20px;
+    }
+  }
 }
 
-.companion-index__level-number {
-  .bold(24px, 24px);
-  color: #ffffff;
-}
+@media (min-width: @desktop-width) {
+  .companion-index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 1440px;
+    min-height: 875px;
+    margin: auto;
+    margin-top: -35px;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-sizing: border-box;
 
-.companion-index__name {
-  .bold(21px, 21px);
-  color: #1d2e5b;
+    background-image:
+      url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-desktop@1x.png");
+    background-position: 45% 35%, 15% 75%;
+    background-repeat: no-repeat;
+    background-color: #192144;
+    z-index: 8;
+
+
+    .companion-index__subtitle-two-text {
+      width: 440px;
+      min-height: 330px;
+      margin-top: 145px;
+      margin-left: 60px;
+    }
+
+    .companion-index__list {
+      width: 630px;
+      min-height: 490px;
+
+      .list-reset();
+      margin-top: 150px;
+      margin-left: 190px;
+    }
+
+    .companion-index__item {
+      margin-top: 0;
+      margin-left: 60px;
+    }
+
+    .companion-index__level {
+      background-color: #344a4c;
+    }
+
+    .companion-index__caption-three {
+      .bloggersans-regular(14px, 14px);
+      color: #ffffff;
+    }
+
+    .companion-index__level-number {
+      .bold(24px, 24px);
+      color: #ffffff;
+    }
+
+    .companion-index__name {
+      .bold(21px, 21px);
+      color: #1d2e5b;
+    }
+
+    .companion__show-all {
+      width: 280px;
+      min-height: 80px;
+      margin: 0;
+      margin-top: -83px;
+      margin-left: 70px;
+    }
+  }
 }

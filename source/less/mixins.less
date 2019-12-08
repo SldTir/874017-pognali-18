@@ -29,3 +29,18 @@
   font-size: @font-size;
   line-height: @line-height;
 }
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+.list-reset() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

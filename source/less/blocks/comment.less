@@ -1,9 +1,33 @@
-.comment__quote {
-  .light(16px, 22px);
-  color: #ffffff;
+.comment {
+  width: 162px;
+  min-height: 150px;
+  margin-left: 50px;
+
+  .comment__quote {
+    .light(16px, 22px);
+    color: #ffffff;
+  }
+
+  .comment__cite {
+    .bold(16px, 22px);
+    color: #ffffff;
+  }
 }
 
-.comment__cite {
-  .bold(16px, 22px);
-  color: #ffffff;
+@media (min-width: @tablet-width) {
+  .comment {
+    width: 280px;
+    min-height: 200px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    width: 285px;
+    min-height: 200px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 80px;
+  }
 }

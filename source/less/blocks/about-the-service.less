@@ -1,12 +1,87 @@
 .about-the-service {
-  background-image: url("../../img/about-mobile@1x.png");
-  background-repeat: no-repeat;
+  width: 225px;
+  min-height: 240px;
+  margin: auto;
+  margin-top: 15px;
+
+  p:nth-child(2) {
+    .light(16px, 22px);
+  }
+
+
+  p:nth-child(3) {
+    .bold(16px, 22px);
+  }
+
+  .about-the-service__more-detailed {
+    display: none;
+  }
 }
 
-.about-the-service p:nth-child(2) {
-  .light(16px, 22px);
+
+@media (min-width: @tablet-width) {
+  .about-the-service {
+    width: 310px;
+    min-height: 370px;
+    margin: 0;
+    margin-top: 60px;
+    margin-left: 40px;
+
+    color: white;
+
+    p:nth-child(2) {
+      .light(16px, 22px);
+    }
+
+    p:nth-child(3) {
+      .bold(16px, 22px);
+    }
+
+    .about-the-service__more-detailed {
+      display: block;
+      width: 270px;
+      min-height: 60px;
+      border-radius: 30px;
+      text-align: center;
+      margin-top: 60px;
+
+      color: #192144;
+
+      background-color: #ffd74b;
+    }
+  }
 }
 
-.about-the-service p:nth-child(3) {
-  .bold(16px, 22px);
+@media (min-width: @desktop-width) {
+  .about-the-service {
+    width: 630px;
+    min-height: 470px;
+    margin: 0;
+    margin-top: 80px;
+    margin-left: 60px;
+
+    color: white;
+
+    p:nth-child(2) {
+      .light(16px, 22px);
+    }
+
+
+    p:nth-child(3) {
+      .bold(16px, 22px);
+    }
+
+    .about-the-service__more-detailed {
+      display: block;
+      width: 270px;
+      min-height: 60px;
+      border-radius: 30px;
+      text-align: center;
+      margin-top: 60px;
+
+      color: #192144;
+
+      background-color: #ffd74b;
+    }
+  }
 }

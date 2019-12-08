@@ -1,4 +1,37 @@
 .page-subtitle {
+  width: 250px;
+  min-height: 140px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 276px;
+  text-align: center;
+
   .bold(36px, 40px);
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page-subtitle {
+    width: 440px;
+    min-height: 212px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 90px;
+
+    .bold(36px, 40px);
+    color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-subtitle {
+    width: 420px;
+    min-height: 215px;
+    margin-left: 50px;
+    margin-top: 75px;
+    margin-bottom: 0;
+
+    .bold(36px, 40px);
+    color: #ffffff;
+  }
 }
