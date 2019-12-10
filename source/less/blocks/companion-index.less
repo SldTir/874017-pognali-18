@@ -116,23 +116,111 @@
     stroke-dasharray: 597px;
   }
 
+  .companion__travel-information {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    margin-top: -4px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .companion__list-images-flag {
+    display: none;
+    .list-reset();
+  }
+
   .companion-index__name {
+    position: relative;
+
     .bold(21px, 21px);
     color: #1d2e5b;
+    margin: auto;
+    margin-top: 27px;
+    padding-bottom: 14px;
+
+    &::before {
+      position: absolute;
+      top: 6px;
+      left: -16px;
+
+      content: "";
+      width: 5px;
+      height: 5px;
+      background-color: #f97676;
+      border-radius: 50%;;
+    }
+
+    &--active::before {
+      background-color: #81e31e;
+    }
+  }
+
+  .companion__text-hashtag {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 16px;
+  }
+
+  .companion__list-way-of-movement {
+    display: flex;
+    justify-content: space-between;
+    width: 118px;
+    .list-reset();
+    margin: auto;
+    padding-bottom: 18px;
   }
 
   .companion__show-all {
+    display: flex;
+    justify-content: space-between;
     width: 270px;
-    min-height: 65px;
+    min-height: 62px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    padding-top: 20px;
-    padding-left: 20px;
-    border-radius: 20px;
+    padding-top: 23px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 10px;
 
     box-sizing: border-box;
+
+    &:hover {
+      background-color: #ffbd30;
+    }
+
+    &:active,
+    &--active {
+      color: rgba(29, 46, 81, 0.3);
+    }
+
+    &:active::before,
+    &--active::before {
+      opacity: 0.3;
+    }
   }
+
+  .companion__right-arrow {
+    margin-top: 1px;
+  }
+
+  .companion__show-all {
+    &:active,
+    &--active {
+      .companion__right-arrow {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.companion-index__list .companion-index__item:last-child {
+  margin-top: 10px;
+}
+
+.companion-index__item:last-child .companion-index__number-svg {
+  stroke-dasharray: 557px;
 }
 
 @media (min-width: @tablet-width) {
