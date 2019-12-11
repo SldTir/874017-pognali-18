@@ -1,15 +1,25 @@
 .site-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
   .medium(30px, 36px);
   text-transform: uppercase;
-  color: #192144;
 
-  list-style: none;
+  .list-reset();
+  margin-top: 22px;
+  padding-top: 43px;
 
-  margin: 0;
-  padding: 0;
+
+  border-top: 1px solid #e5e5e5;
+
+  .site-list__item {
+    margin: auto;
+  }
 
   a {
     text-decoration: none;
+    color: #192144;
   }
 
   @media (min-width: @desktop-width) {
