@@ -27,6 +27,15 @@
     background-color: white;
   }
 
+  .page-header__logo-image {
+    &--active {
+      display: block;
+    }
+    &--disable {
+      display: none;
+    }
+  }
+
   .toggle {
     padding: 0;
     margin: 0;
@@ -42,16 +51,6 @@
 
     margin: auto;
     margin-top: 28px;
-  }
-
-  .page-header__user-list {
-    position: absolute;
-    top: 457px;
-
-    width: 270px;
-    min-height: 50px;
-
-    display: flex;
   }
 }
 

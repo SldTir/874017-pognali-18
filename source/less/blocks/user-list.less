@@ -1,12 +1,25 @@
 .user-list {
-  .medium(17px, 30px);
-  color: #161c35;
+  position: absolute;
+  top: 457px;
 
-  list-style: none;
-  .list-reset();
+  &--active {
+    display: flex;
+    width: 270px;
+    min-height: 50px;
+
+    .medium(17px, 30px);
+    color: #161c35;
+
+    list-style: none;
+    .list-reset();
+  }
+
+  &--disable {
+    display: none;
+  }
 
   .user-list__tel {
-    display: none;
+    display: block;
     width: 41px;
     height: 41px;
     padding-top: 10px;
@@ -21,7 +34,7 @@
   }
 
   .user-list__letter {
-    display: none;
+    display: block;
     width: 41px;
     height: 41px;
     padding-top: 8px;
@@ -36,7 +49,7 @@
   }
 
   .user-list__login {
-    display: none;
+    display: block;
     padding-left: 38px;
     padding-right: 38px;
     padding-top: 7px;
