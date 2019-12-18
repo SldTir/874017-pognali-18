@@ -170,9 +170,26 @@
   fill: #ffd74b;
 }
 
-.main-nav--nojs {
-  display: none;
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__container  {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__container {
+    position: absolute;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    position: static;
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .main-nav {
