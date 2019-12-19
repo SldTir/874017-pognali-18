@@ -15,8 +15,8 @@
       <a class="page-header__logo" href="#">
         <img class="page-header__logo-image page-header__logo-image-white" src="img/logo-mobile-white@1x.png"
           width="100" height="19" alt="Логотип Погнали?">
-        <img class="page-header__logo-image--disable page-header__logo-image-blue" src="img/logo-mobile-blue@1x.png" width="100"
-          height="19" alt="Логотип Погнали?">
+        <img class="page-header__logo-image--disable page-header__logo-image-blue" src="img/logo-mobile-blue@1x.png"
+          width="100" height="19" alt="Логотип Погнали?">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" aria-label="Кнопка открывающая выпадающее меню"></button>
@@ -522,7 +522,28 @@
         </table>
       </div>
       <a class="add-profile__show-tariff" href="#">Показать тарифы для бизнеса</a>
-      <a class="add-profile__close-window add-profile__close-button" href="#">Закрыть окно</a>
+      <div class="business-tariff">
+        <table class="business-tariff__list">
+        <caption class="index business-tariff__subtitle-two index__subtitle-two">Бизнес-тарифы</caption>
+          <tr class="business-tariff__item">
+            <td class="business-tariff__cell">Реклама у блоггера</td>
+            <td class="business-tariff__cell">300 000 руб./пост</td>
+          </tr>
+          <tr class="business-tariff__item">
+            <td class="business-tariff__cell">Накрутка подписчиков</td>
+            <td class="business-tariff__cell">от 1 руб./шт</td>
+          </tr>
+          <tr class="business-tariff__item">
+            <td class="business-tariff__cell">Лайки от ботов от</td>
+            <td class="business-tariff__cell">20 коп./лайк</td>
+          </tr>
+          <tr class="business-tariff__item">
+            <td class="business-tariff__cell">Ваш продакт-плейсмент</td>
+            <td class="business-tariff__cell">Индивидуально</td>
+          </tr>
+      </table>
+        <a class="add-profile__close-window add-profile__close-button" href="#">Закрыть окно</a>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -609,17 +630,6 @@
     </div>
   </footer>
 
-  <section class="visually-hidden business-tariff">
-    <h2 class="index index__subtitle-two">Бизнес-тарифы</h2>
-    <ul class="business-tariff__list">
-      <li class="business-tariff__item">Реклама у блоггера 300 000 руб./пост</li>
-      <li class="business-tariff__item">Накрутка подписчиков от 1 руб./шт</li>
-      <li class="business-tariff__item">Лайки от ботов от 20 коп./лайк</li>
-      <li class="business-tariff__item">Ваш продакт-плейсмент Индивидуально</li>
-    </ul>
-    <button class="business-tariff__button-close">Закрыть окно</button>
-  </section>
-
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
@@ -629,6 +639,7 @@
     var userList = document.querySelector('.user-list');
     var showTariff = document.querySelector('.add-profile__show-tariff');
     var closeWindow = document.querySelector('.add-profile__close-window');
+    var businessTariff = document.querySelector('.business-tariff');
 
     navMain.classList.remove('main-nav--nojs');
 
@@ -663,9 +674,11 @@
       if (closeWindow.classList.contains('add-profile__close-button')) {
         showTariff.classList.add('add-profile__close-button');
         closeWindow.classList.remove('add-profile__close-button');
+        businessTariff.classList.add('business-tariff--active');
       } else {
         showTariff.classList.remove('add-profile__close-button');
         closeWindow.classList.add('add-profile__close-button');
+        businessTariff.classList.remove('business-tariff--active');
       }
     })
 
@@ -674,9 +687,11 @@
       if (showTariff.classList.contains('add-profile__close-button')) {
         showTariff.classList.remove('add-profile__close-button');
         closeWindow.classList.add('add-profile__close-button');
+        businessTariff.classList.remove('business-tariff--active');
       } else {
         showTariff.classList.add('add-profile__close-button');
         closeWindow.classList.remove('add-profile__close-button');
+        businessTariff.classList.add('business-tariff--active');
       }
     })
   </script>
