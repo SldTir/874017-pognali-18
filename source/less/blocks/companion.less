@@ -43,16 +43,32 @@
 .companion__images-transport {
   cursor: pointer;
   opacity: 0.15;
+  position: relative;
+  z-index: 10;
+}
+
+.companion__list-photo:hover .companion__images-transport {
+  opacity: 0.3;
+}
+
+.companion__list-photo:active .companion__images-transport {
+  opacity: 0.1;
 }
 
 .companion__images-transport--active {
-  position: relative;
-  z-index: 10;
   opacity: 1;
 }
 
 .companion__list-photo {
   position: relative;
+}
+
+.companion__list-photo:hover .companion__images-transport--active {
+  opacity: 0.7;
+}
+
+.companion__list-photo:active .companion__images-transport--active {
+  opacity: 0.3;
 }
 
 .companion__list-photo:hover::before {
@@ -112,6 +128,7 @@ background: #e2e5f1;
   top: 29px;
   left: 2px;
   transform: rotate(180deg);
+  z-index: 11;
 }
 
 .companion__list-photo:hover svg {
