@@ -9,12 +9,32 @@
   background-color: #ffd74b;
 
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
+
 
 .main-nav__tel,
 .main-nav__letter {
   .bold(16px, 22px);
   color: #192144;
+
+}
+
+.main-nav__tel:hover path,
+.main-nav__letter:hover path {
+  fill: #ffbd30;
+}
+
+.main-nav__tel:active path,
+.main-nav__letter:active path {
+  fill: rgba(255, 189, 48, 0.3);
 }
 
 .main-nav__container {

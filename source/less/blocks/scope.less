@@ -19,6 +19,7 @@
   }
 
   .scope__item {
+    position: relative;
     width: 270px;
     min-height: 95px;
     padding-top: 21px;
@@ -28,6 +29,17 @@
     box-sizing: border-box;
 
     background-color: #ff8d30;
+  }
+
+  .scope__item::after {
+    position: absolute;
+    top: 22px;
+    right: 19px;
+    counter-increment: section;
+    content: counters(section,".") " ";
+
+    .bold(18px, 18px);
+    color: white;
   }
 
   .scope__item:nth-child(1) {

@@ -35,6 +35,11 @@
   .social-networks__item {
     background-color: #ffd74b;
     border-radius: 50%;
+
+    &--hover,
+    &:hover {
+      background-color: #192144;
+    }
   }
 
   .social-networks__link-icon {
@@ -88,7 +93,6 @@
     .bloggersans-regular(16px, 22px);
     text-decoration: none;
     color: #444444;
-
     &:hover {
       color: rgba(68, 68, 68, 0.6);
     }
@@ -98,6 +102,16 @@
       color: rgba(68, 68, 68, 0.3);
     }
   }
+}
+
+.page-footer__item:hover  path,
+.page-footer__item:hover  circle {
+  fill: #ffffff;
+}
+
+.page-footer__item:active path,
+.page-footer__item:active circle {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
