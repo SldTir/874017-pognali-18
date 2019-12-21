@@ -98,7 +98,7 @@
     top: 7px;
     left: 1px;
 
-    width: 19px;
+    width: 22px;
     height: 2px;
 
     background-color: #cccccc;
@@ -213,8 +213,8 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
-    top: 61px;
-    right: 376px;
+    top: 57px;
+    right: 377px;
     z-index: 12;
   }
 
@@ -253,6 +253,53 @@
     background-color: #ffffff;
     box-shadow: 0 8px 0 0 #ffffff;
   }
+
+  .main-nav__login {
+    position: absolute;
+    top: 40px;
+    right: 41px;
+
+    width: 188px;
+    padding-top: 11px;
+
+    .bold(20px, 30px);
+  }
+
+  .main-nav__tel {
+    margin-top: 81px;
+}
+
+.main-nav__letter {
+  margin-top: 5px;
+}
+
+.main-nav__tel,
+.main-nav__letter {
+  position: relative;
+  margin-left: 71px;
+}
+
+  .main-nav__tel,
+  .main-nav__letter {
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.main-nav__tel span:first-child,
+.main-nav__letter span:first-child {
+  width: 68px;
+  height: 68px;
+  margin-top: -5px;
+  margin-right: 8px;
+  padding-top: 22px;
+  padding-left: 20px;
+
+
+  svg {
+    width: 27px;
+    height: 27px;
+  }
+}
 }
 
 @media (min-width: @desktop-width) {
