@@ -73,7 +73,7 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  min-height: 389px;
+  min-height: 390px;
   padding-left: 25px;
   padding-right: 25px;
   margin: auto;
@@ -82,11 +82,36 @@
   background-color: #192144;
   border-radius: 0 0 30px 30px;
   box-sizing: border-box;
-  background-image: url('../img/about-mobile@1x.png');
-  background-repeat: no-repeat;
-  background-position: 18px 38px;
 
   z-index: 10;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 38px;
+    left: 1px;
+    width: 106px;
+    height: 132px;
+    background-color: #141b3b;
+    border-radius: 0 15px 15px 0px;
+
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 38px;
+    left: 18px;
+    width: 292px;
+    height: 352px;
+    background-image: url('../img/about-mobile@1x.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;

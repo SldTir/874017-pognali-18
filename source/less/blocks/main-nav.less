@@ -212,34 +212,32 @@
 
 
 @media (min-width: @tablet-width) {
-  .main-nav {
-    display: block;
+  .main-nav__toggle {
+    top: 61px;
+    right: 376px;
+    z-index: 12;
+  }
+
+  .main-nav__container {
+    position: relative;
 
     width: @tablet-width;
-    min-height: 911px;
-
+    min-height: 912px;
     margin: auto;
+    margin-left: 0px;
+
+    color: white;
 
     background-color: white;
+    z-index: 11;
   }
 
-  .main-nav__toggle {
+  .main-nav--opened .main-nav__container {
     position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 19px;
-    height: 19px;
-    z-index: 2;
-
-    display: block;
-    width: 19px;
-    height: 19px;
-
-    background-color: transparent;
-
-    cursor: pointer;
-    border: none;
+    top: 0;
+    left: 0;
   }
+
 
   .main-nav--closed .main-nav__toggle::before {
     top: 10px;
