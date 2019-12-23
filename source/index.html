@@ -729,7 +729,7 @@
     navMain.classList.remove('main-nav--nojs');
 
     navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed') && window === pageYOffset < '1') {
+      if (navMain.classList.contains('main-nav--closed') && !pageHeader.classList.contains('page-header--scroll')) {
         navMain.classList.remove('main-nav--closed');
         pageHeader.classList.add('page-header--active');
         navMain.classList.add('main-nav--opened');
@@ -748,7 +748,7 @@
         logoMobileBlue.classList.remove('page-header__logo-image--active');
         logoMobileBlue.classList.add('page-header__logo-image--disable');
       }
-    });
+    })
 
     showTariff.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -777,7 +777,7 @@
     })
 
     window.addEventListener('scroll', function () {
-      if (window = pageYOffset >= '1') {
+      if (window = pageYOffset > '1') {
         pageHeader.classList.add('page-header--scroll');
         navToggle.classList.add('main-nav__toggle--scroll');
       } else {
