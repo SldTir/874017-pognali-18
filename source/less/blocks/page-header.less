@@ -27,6 +27,15 @@
     background-color: white;
   }
 
+  &--scroll {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 20;
+  }
+
   .page-header__logo-image {
     &--active {
       display: block;
@@ -73,13 +82,12 @@
     }
 
     .page-header__logo-image-white {
-      display: none;
-    }
-
-    .page-header__logo-tablet-white {
-      display: block;
-      margin-top: 10px;
-      margin-left: 4px;
+      &--active {
+        display: block;
+      }
+      &--disable {
+        display: none;
+      }
     }
 
     .page-header__logo {
