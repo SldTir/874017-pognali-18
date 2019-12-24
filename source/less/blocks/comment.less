@@ -1,4 +1,5 @@
 .comment {
+  position: relative;
   width: 162px;
   min-height: 150px;
   margin-left: 50px;
@@ -18,7 +19,19 @@
   .comment {
     width: 280px;
     min-height: 200px;
-    margin-left: 30px;
+    margin-top: -21px;
+    margin-left: 74px;
+
+    .comment__quote {
+      .light(28px, 33px);
+    }
+
+    .comment__cite {
+      .bold(21px, 25px);
+      width: 250px;
+      display: block;
+      margin-top: 43px;
+    }
   }
 }
 

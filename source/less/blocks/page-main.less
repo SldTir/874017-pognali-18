@@ -31,14 +31,15 @@
       flex-direction: column;
 
       width: @tablet-width;
-      min-height: 580px;
+      min-height: 842px;
 
       background-color: #182044;
       background-image:
         url("../img/traveller-illustration-tablet@1x.png"),
         url("../img/globe-back-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: center center;
+        background-repeat: no-repeat;
+        background-position: 283px 253px, -347px 230px;
+        background-size: auto, 191% 73%
     }
   }
 }
@@ -80,7 +81,7 @@
   color: white;
 
   background-color: #192144;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 55px 55px;
   box-sizing: border-box;
 
   z-index: 10;
@@ -120,12 +121,35 @@
     min-height: 370px;
     margin: auto;
 
-    background-image: url("../img/about-desktop@1x.png");
-    background-repeat: no-repeat;
     background-color: #192144;
-    border-radius: 0 0 30px 30px;
-    background-size: 50%;
-    background-position: 90% 20%;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 6px;
+      left: 39px;
+      width: 688px;
+      height: 213px;
+      background-color: #141b3b;
+      border-radius: 15px 15px 15px 15px;
+
+      z-index: -2;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 55px;
+      left: 383px;
+      width: 376px;
+      height: 548px;
+      background-image: url("../img/about-tablet@1x.png");
+      background-size: 100%;
+      background-position: 0 0;
+      z-index: -1;
+    }
   }
 
   @media (min-width: @desktop-width) {

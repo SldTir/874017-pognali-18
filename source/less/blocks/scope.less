@@ -69,24 +69,71 @@
 @media (min-width: @tablet-width) {
   .scope {
     width: 768px;
-    min-height: 300px;
+    min-height: 230px;
     margin: auto;
 
-    background-color: #192144;
+    background: linear-gradient(to top, #192144, #192144);
 
     .scope__list {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
       width: 688px;
       min-height: 290px;
+
       .bold(18px, 18px);
       color: #161c35;
 
-      background-color: #ff8d30;
+      background-color: transparent;
 
       .list-reset();
       margin: auto;
+      margin-top: -139px;
+    }
+
+    .scope__item {
+      width: 344px;
+      min-height: 142px;
+      padding-top: 31px;
+      padding-left: 32px;
+
+      .bold(24px, 24px);
+    }
+
+    .scope__item:nth-child(1) {
+      width: 361px;
+      border-radius: 20px 0 0 0;
+    }
+
+    .scope__item:nth-child(2) {
+      border-radius: 20px 20px 0 0;
+      margin-top: 0;
+      margin-left: -17px;
+    }
+
+    .scope__item:nth-child(3) {
+      width: 361px;
+      border-radius: 0 0 0 20px;
+    }
+
+    .scope__item:nth-child(4) {
+      border-radius: 0 0 20px 20px;
+      margin-left: -17px;
+      min-height: 142px;
+    }
+
+    .scope__item::after {
+      position: absolute;
+      top: 44px;
+      right: 0px;
+      left: 33px;
+      counter-increment: section;
+      content: counters(section,".") " ";
+
+      .bold(30px, 120px);
+      color: white;
     }
   }
 }
