@@ -127,6 +127,10 @@
     text-decoration: none;
   }
 
+  .add-profile__business {
+    display: none;
+  }
+
   .add-profile__close-button {
     display: block;
   }
@@ -137,89 +141,199 @@
     display: flex;
     flex-direction: column;
     width: 768px;
-    min-height: 495px;
+    min-height: 591px;
     margin: auto;
     margin-top: -35px;
     padding-left: 40px;
     padding-right: 40px;
 
+    background-image: none;
     background-color: #edeff6;
-    background-image: url("../img/rates@1x.png");
-    background-repeat: no-repeat;
-    background-size: 15%;
-    background-position: 80% 80%;
-    border-radius: 0 0 30px 30px;
     z-index: 7;
 
     box-sizing: border-box;
 
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 444px;
+      right: 85px;
+      width: 100px;
+      height: 99px;
+      background-image: url("../img/rates@1x.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 0 0;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 185px;
+      right: 40px;
+      width: 198px;
+      height: 285px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+      z-index: -1;
+    }
+
+    .add-profile__item:first-child {
+      padding-top: 17px;
+      border-top: 0;
+      width: 1355px;
+  }
+
     .add-profile__subtitle-two {
       width: 490px;
       min-height: 65px;
-      margin-top: 70px;
-      margin-left: 100px;
+      margin-top: 84px;
+      margin-left: 105px;
     }
 
     .add-profile__number-table {
       display: flex;
       align-items: flex-start;
 
-      margin-top: 15px;
+      margin-top: 53px;
     }
 
+    .add-profile__tbody {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
     .add-profile__number-list {
-      width: 70px;
+      width: 91px;
       min-height: 204px;
 
       order: 0;
     }
 
+    .add-profile__line {
+      width: 562px;
+      min-height: 65px;
+      padding-left: 0px;
+      border-top: 1px solid #e1e3e9;
+    }
+
+  .add-profile__line:last-child {
+    border-bottom: 1px solid #e1e3e9;
+  }
+
+
+  .add-profile__price {
+    margin-top: 0px;
+    padding-top: 17px;
+    padding-bottom: 0;
+    border-top: 0;
+    text-align: right;
+}
+
     .add-profile__number-item {
       width: 67px;
       height: 67px;
-      padding-left: 13px;
-      padding-top: 8px;
-      margin-left: 47px;
+      padding-left: 25px;
+      padding-top: 26px;
+      margin-top: -6px;
+      margin-left: 1px;
       color: white;
       box-sizing: border-box;
+
+      font-size: 28px;
 
       background-color: #ffa530;
       border-radius: 50%;
     }
 
+    .add-profile__item {
+      width: 1000px;
+      display: table-cell;
+      font-family: "Blogger Sans", "Arial", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 28px;
+      line-height: 33px;
+      border-bottom: 0;
+  }
+
     .add-profile__number-item:nth-child(2) {
-      margin-top: 30px;
+      margin-top: 0;
+      padding-left: 27px;
       background-color: #ffbd30;
     }
 
     .add-profile__number-item:nth-child(3) {
-      margin-top: 30px;
+      margin-top: 0;
+      padding-left: 27px;
       background-color: #ffd74b;
     }
 
     .add-profile__list {
-      width: 688px;
+      width: 562px;
       min-height: 190px;
-      .light(16px, 22px);
+      .light(20px, 33px);
       color: #717273;
 
       .list-reset();
       margin-left: 0;
+      border-collapse: collapse;
     }
 
     .add-profile__show-tariff {
+      position: relative;
       width: 285px;
       min-height: 40px;
       margin: 0;
-      margin-top: 5px;
-      margin-left: 80px;
-      .bold(16px, 16px);
+      margin-top: 48px;
+      margin-left: 89px;
+      .bold(20px, 20px);
       color: #192144;
 
       text-decoration: none;
+
+      &:hover {
+        color: rgba(19, 37, 118, 0.7);
+      }
+
+      &:active {
+        color: rgba(19, 37, 118, 0.3);
+      }
+    }
+
+    .add-profile__business {
+      position: absolute;
+      top: -3px;
+      left: -64px;
+      display: block;
+      fill: #132576;
+    }
+
+
+    .add-profile__business-background::after {
+      content: "";
+      position: absolute;
+      top: -23px;
+      left: -89px;
+      width: 67px;
+      height: 67px;
+      background-color: #e2e5f2;
+      border-radius: 50%;
+      z-index: -1;
     }
   }
 }
+
+.add-profile__show-tariff:hover .add-profile__business {
+  fill: rgba(19, 37, 118, 0.7);
+}
+
+.add-profile__show-tariff:active .add-profile__business {
+  fill: rgba(19, 37, 118, 0.3);
+}
+
 
 @media (min-width: @desktop-width) {
   .add-profile {

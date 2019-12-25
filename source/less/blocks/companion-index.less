@@ -231,7 +231,7 @@
     width: 768px;
     min-height: 1200px;
     margin: auto;
-    margin-top: -35px;
+    margin-top: -55px;
     padding-left: 40px;
     padding-right: 40px;
     box-sizing: border-box;
@@ -239,15 +239,34 @@
     background-image:
       url("../img/smolov-back-desktop@1x.png"),
       url("../img/rogovaya-back-desktop@1x.png");
-    background-position: 0% 25%, 90% 5%;
+      background-size: 143px 143px, 285px 285px;
+      background-position: 39px 481px, 409px 135px;
     background-repeat: no-repeat;
     background-color: #192144;
     z-index: 8;
+    border-radius: 0 0 55px 55px;
+
+    .companion__images-avatar {
+      width: 285px;
+      height: 285px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .companion__travel-information {
+      width: 285px;
+      min-height: 198px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .companion-index__item:last-child {
+      margin-top: 0;
+      margin-left: 49px;
+    }
 
     .companion-index__subtitle-two-text {
       width: 435px;
       min-height: 335px;
-      margin-top: 176px;
+      margin-top: 197px;
       margin-left: 32px;
     }
 
@@ -258,6 +277,15 @@
       font-size: 28px;
       line-height: 33px;
       color: #ffffff;
+      margin-top: 57px;
+      margin-left: 2px;
+  }
+
+  .companion__text:nth-child(3) {
+    .bold(21px, 25px);
+    color: #ffffff;
+    margin-top: 38px;
+    margin-left: 2px;
   }
 
     .companion-index__list {
@@ -267,7 +295,7 @@
 
       .list-reset();
       margin: auto;
-      margin-top: 0;
+      margin-top: 35px;
     }
 
     .companion-index__item {
@@ -276,6 +304,8 @@
     }
 
     .companion-index__level {
+      top: 20px;
+      left: 21px;
       background-color: #344a4c;
     }
 
@@ -290,15 +320,61 @@
     }
 
     .companion-index__name {
-      .bold(21px, 21px);
+      .bold(24px, 24px);
       color: #1d2e5b;
+      margin-top: 31px;
     }
 
+    .companion-index__name::before {
+      top: 8px;
+      left: -22px;
+      width: 7px;
+      height: 7px;
+  }
+
+  .companion-index__name--active::before {
+    background-color: #81e31e;
+  }
+
+  .companion__text-hashtag {
+    .bloggersans-regular(20px, 24px);
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: -2px;
+    margin-left: 41px;
+  }
+
+  .companion__list-way-of-movement {
+    margin-top: 2px;
+}
+
     .companion__show-all {
-      width: 618px;
-      min-height: 80px;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 617px;
+      min-height: 81px;
       margin: auto;
-      margin-top: -20px;
+      margin-top: 64px;
+      margin-bottom: 87px;
+      padding-top: 30px;
+      padding-left: 32px;
+      padding-right: 35px;
+      font-family: "Blogger Sans", "Arial", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 24px;
+      color: #1d2e5b;
+      background-color: #ffd74b;
+      border-radius: 20px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      text-decoration: none;
     }
   }
 }
