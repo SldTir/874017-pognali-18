@@ -35,6 +35,36 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+    .medium(30px, 36px);
+    text-transform: uppercase;
+    
+    .list-reset();
+    margin-top: 23px;
+    padding-top: 43px;
+    
+    .site-list__item {
+    margin: 0;
+    margin-left: 10px;
+    }
+    
+    .site-list__item:nth-child(2) {
+      margin: 0;
+      margin-left: 10px;
+    }
+
+    .site-list__item:nth-child(3) {
+      margin: 0;
+      margin-left: 10px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: white;
+      .medium(20px, 30px);
+    }
   }
 }
