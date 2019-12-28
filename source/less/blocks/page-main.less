@@ -51,6 +51,7 @@
 
 
     .page-main__subtitle-comment {
+      position: relative;
       display: flex;
       flex-direction: row;
       align-items: flex-start;
@@ -64,8 +65,10 @@
         url("../img/globe-back-desktop@1x.jpg");
         background-size: auto, auto;
       background-repeat: no-repeat;
-      background-position: 603px -20px, -179px -130px;
+      background-position: 603px 3px, -179px -106px;
       background-color: #161c34;
+      border-radius: 0 0 55px 55px;
+      z-index: 0;
     }
   }
 }
@@ -158,7 +161,33 @@
     display: flex;
     flex-direction: column;
     width: 1440px;
-    min-height: 700px;
+    min-height: 670px;
     margin: auto;
+
+    &::after {  
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 60px;
+      width: 213px;
+      height: 213px;
+      background-color: #141b3b;
+      border-radius: 20px 20px 20px 20px;
+      z-index: -2;
+  }
+ 
+    &::before {
+      content: "";
+  
+      position: absolute;
+      top: 5px;
+      left: 750px;
+      width: 654px;
+      height: 690px;
+      background-image: url("../img/about-desktop@1x.png");
+      background-size: auto;
+      background-position: 0 0;
+      z-index: -1;
+    }
   }
 }
