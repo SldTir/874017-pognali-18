@@ -370,14 +370,22 @@
       margin-top: -23px;
     }
 
+    .main-nav__list::before {
+      content: "";
+      position: absolute;
+      top: 39px;
+      left: -94px;
+      width: 60px;
+      height: 2px;
+      background: #ffffff;
+    }
+
     .main-nav__list:last-child {
       display: none;
     }
 
     .main-nav__toggle {
-      top: 62px;
-      left: 301px;
-      z-index: 12;
+      display: none;
     }
 
     .main-nav--closed .main-nav__toggle::before {

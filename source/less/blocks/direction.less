@@ -172,7 +172,7 @@
   }
 
   .direction__item:last-child .direction__item-info {
-    background: linear-gradient(to top, #edeff6 0%, #ffffff 120%);
+    background: linear-gradient(to top, #edeff6 11%, #ffffff 44%);
   }
 }
 
@@ -373,19 +373,13 @@
         position: relative;
         top: 4px;
       }
-  }
-}
-}
-
-@media (min-width: @tablet-width) {
-  .direction__item:last-child .direction__item-info {
-    background: linear-gradient(to top, #edeff6 0%, #ffffff 0%);
+    }
   }
 
   .direction__item:last-child span {
-    background: linear-gradient(to bottom, #dbdce0, #e2e4e9); /* Градиент для текста */
-    -webkit-background-clip: text; /* Обрезаем фон по тексту */
-    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+    background: repeating-linear-gradient(#c7c7c7 0%, #c7c7c7 50%, #e2e4e9 50%, #e2e4e9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 

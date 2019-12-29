@@ -133,6 +133,7 @@
     &--scroll {
       position: fixed;
       margin: auto;
+      min-height: 90px;
       left: 0;
       right: 0;
       background-color: white;
@@ -166,6 +167,32 @@
       margin-right: auto;
 
       .list-reset();
+    }
+  }
+
+  .page-header--scroll {
+    .main-nav__wrapper {
+      margin-top: 10px;
+    }
+
+    .page-header__wrapper-nav {
+      margin-top: 10px;
+    }
+
+    .main-nav {
+      background-color: white;
+    }
+
+    .site-list__link {
+      color: #192144;
+    }
+
+    .main-nav__list {
+      margin-top: -25px;
+    }
+
+    .main-nav__list::before {
+      background: #192144;
     }
   }
 }
