@@ -1,5 +1,5 @@
 .about-the-service {
-  width: 210px;
+  width: 212px;
   min-height: 240px;
   margin-top: 72px;
   margin-left: 23px;
@@ -16,6 +16,14 @@
   }
 
   .about-the-service__more-detailed {
+    display: none;
+  }
+
+  .about-the-service__br2 {
+    display: none;
+  }
+
+  .about-the-service__br3 {
     display: none;
   }
 }
@@ -72,6 +80,18 @@
     .about-the-service__right-arrow {
       margin-left: 73px;
     }
+
+    .about-the-service__br1 {
+      display: none;
+    }
+
+    .about-the-service__br2 {
+      display: block;
+    }
+
+    .about-the-service__br3 {
+      display: none;
+    }
   }
 }
 
@@ -92,7 +112,7 @@
     p:nth-child(2) {
       .light(28px, 33px);
       margin-top: 58px;
-      
+
       &br {
         display: none;
       }
@@ -100,6 +120,7 @@
 
 
     p:nth-child(3) {
+      margin-top: 39px;
       .bold(21px, 25px);
     }
 
@@ -108,7 +129,7 @@
       width: 274px;
       min-height: 82px;
       border-radius: 30px;
-      margin-top: 51px;
+      margin-top: 83px;
       margin-bottom: 87px;
       padding-top: 30px;
       padding-left: 34px;
@@ -119,6 +140,14 @@
       background-color: #ffd74b;
       box-sizing: border-box;
       border-radius: 20px;
+    }
+
+    .about-the-service__br2 {
+      display: none;
+    }
+
+    .about-the-service__br3 {
+      display: block;
     }
   }
 }
