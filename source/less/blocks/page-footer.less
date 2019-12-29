@@ -75,6 +75,20 @@
       color: rgba(68, 68, 68, 0.3);
     }
   }
+
+  .page-footer__item {
+    background-color: #ffd74b;
+    border-radius: 50%;
+
+    &--hover,
+    &:hover {
+      background-color: #192144;
+    }
+  }
+
+  .social-networks__image-instagram {
+    fill: #1d2e5b;
+  }
 }
 
 .page-footer__item:hover  path,
@@ -116,14 +130,12 @@
     .page-footer__list {
     width: 179px;
     min-height: 70px;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 47px;
-    margin-left: 85px;
+    margin-top: 46px;
+    margin-left: 84px;
     }
 
     .page-footer__text-html-logo {
@@ -142,8 +154,52 @@
     a {
       .bloggersans-regular(20px, 24px);
     }
+
   }
 }
+
+@media (min-width: @tablet-width) {
+.page-footer__item:nth-child(1) svg {
+  width: 14px;
+  height: 28px;
+}
+.page-footer__item:nth-child(2) svg {
+  width: 31px;
+  height: 16px;
+}
+.page-footer__item:nth-child(3) svg {
+  width: 24px;
+  height: 24px;
+}
+
+.page-footer__item:nth-child(1) .social-networks__link-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding-top: 16px;
+  padding-left: 23px;
+  box-sizing: border-box;
+}
+
+.page-footer__item:nth-child(2) .social-networks__link-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 14px;
+  box-sizing: border-box;
+}
+
+.page-footer__item:nth-child(3) .social-networks__link-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding-top: 18px;
+  padding-left: 18px;
+  box-sizing: border-box;
+}
+}
+
 
 @media (min-width: @desktop-width) {
   .page-footer {
@@ -155,11 +211,11 @@
     min-height: 150px;
     margin: auto;
     margin-top: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
 
     background-color: #ffffff;
-    border-radius: 50px 50px 0 0;
+    border-radius: 55px 55px 0 0;
 
     box-sizing: border-box;
 
@@ -175,14 +231,14 @@
       width: 195px;
       min-height: 80px;
       margin: 0 0;
-      margin-top: 70px;
-      margin-left: 340px;
+      margin-top: 48px;
+      margin-left: 279px;
     }
 
     .page-footer__text-html-logo {
       width: 160px;
       min-height: 50px;
-      margin-top: 50px;
+      margin-top: 46px;
       margin-left: auto;
     }
 

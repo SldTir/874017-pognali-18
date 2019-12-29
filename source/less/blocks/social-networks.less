@@ -6,16 +6,6 @@
     fill: #cccccc;
   }
 
-  .social-networks__item {
-    background-color: #ffd74b;
-    border-radius: 50%;
-
-    &--hover,
-    &:hover {
-      background-color: #192144;
-    }
-  }
-
   .social-networks__link-icon {
     display: block;
     width: 45px;
@@ -63,13 +53,10 @@
 @media (min-width: @tablet-width) {
   .social-networks__header {
     justify-content: flex-start;
-    width: 161px;
+    width: 214px;
     margin: 0 0 0 0;
     margin-top: 130px;
     margin-left: 107px;
-  }
-
-  .social-networks__list {
 
   .social-networks__link-icon {
     display: block;
@@ -79,23 +66,37 @@
     padding-left: 17px;
     box-sizing: border-box;
   }
-  }
-  .social-networks__item:nth-child(1) svg {
+
+  .social-networks__header-item:nth-child(1) svg {
     width: 14px;
     height: 28px;
   }
-  .social-networks__item:nth-child(2) svg {
+  .social-networks__header-item:nth-child(2) svg {
     width: 31px;
     height: 16px;
   }
-  .social-networks__item:nth-child(3) svg {
+  .social-networks__header-item:nth-child(3) svg {
     width: 24px;
     height: 24px;
   }
 
-  .social-networks__item {
+  .social-networks__header-item {
     width: 59px;
     height: 59px;
+  }
+
+  .social-networks__header-item:nth-child(1) {
+    margin-left: 16px;
+  }
+
+  .social-networks__header-item:nth-child(2) {
+    margin-left: -8px;
+    margin-top: 9px;
+  }
+
+  .social-networks__header-item:nth-child(3) {
+    margin-left: 5px;
+    margin-top: 4px;
   }
 
   .social-networks__image-facebook {
@@ -110,6 +111,7 @@
     width: 24px;
     height: 24px;
   }
+}
 }
 
 @media (min-width: @desktop-width) {
