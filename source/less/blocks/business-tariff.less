@@ -86,27 +86,107 @@
 
 @media (min-width: @tablet-width) {
   .business-tariff {
-    top: 35px;
+    top: 23px;
     left: 35px;
     width: 688px;
     min-height: 526px;
+    border-radius: 30px;
 
     .business-tariff__list {
+      width: 517px;
       font-size: 22px;
+      border-collapse: collapse;
     }
 
     .business-tariff__subtitle-two {
-      width: 503px;
-      margin-top: 41px;
-      margin-left: 4px;
+      width: 507px;
+      margin-top: 54px;
+      margin-left: 6px;
+      padding-left: 4px;
+      padding-bottom: 45px;
+      box-sizing: border-box;
     }
 
     .business-tariff__item {
       display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 16px;
+      margin-left: 6px;
+    }
+
+    .business-tariff__item:nth-child(2) {
+      margin-top: 10px;
+    }
+
+    .business-tariff__item:nth-child(3) {
+      margin-top: 10px;
+    }
+
+    .business-tariff__item:nth-child(4) {
+      margin-top: 10px;
+    }
+
+    .business-tariff__cell {
+      border: 0;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .business-tariff__cell:nth-child(1) {
+      width: 224px;
     }
 
     .business-tariff__cell:nth-child(2) {
       text-align: right;
+      border: 0;
+      width: 284px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .business-tariff__close-window {
+      width: 688px;
+      margin-top: 51px;
+      border-radius: 0 0 30px 30px;
+      padding-top: 45px;
+      padding-bottom: 48px;
+      text-transform: none;
+      font-size: 24px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .business-tariff {
+    top: 145px;
+    left: 345px;
+    width: 750px;
+    min-height: 526px;
+    border-radius: 30px;
+
+    .business-tariff__list {
+      width: 645px;
+    }
+
+    .business-tariff .business-tariff__cell:nth-child(2) {
+      width: 409px;
+    }
+
+    .business-tariff__subtitle-two {
+      width: 634px;
+      margin-top: 52px;
+    }
+
+    .business-tariff__cell:nth-child(2) {
+      width: 409px;
+    }
+
+    .business-tariff__close-window {
+      width: 750px;
     }
   }
 }

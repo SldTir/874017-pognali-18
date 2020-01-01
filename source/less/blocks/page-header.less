@@ -170,28 +170,36 @@
     }
   }
 
-  .page-header--scroll {
-    .main-nav__wrapper {
+  .page-header.page-header--scroll {
+    .page-header__wrapper {
       margin-top: 10px;
+      top: 0;
+      left: 697px;
     }
 
     .page-header__wrapper-nav {
       margin-top: 10px;
     }
 
-    .main-nav {
+    .page-header-main-nav {
       background-color: white;
     }
 
-    .site-list__link {
+    .page-header__link {
       color: #192144;
     }
 
-    .main-nav__list {
+    .page-header__list {
       margin-top: -25px;
     }
 
-    .main-nav__list::before {
+    .page-header__list::before {
+      content: "";
+      position: absolute;
+      top: 34px;
+      left: -79px;
+      width: 45px;
+      height: 2px;
       background: #192144;
     }
   }
