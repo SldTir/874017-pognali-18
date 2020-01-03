@@ -10,6 +10,32 @@
   color: #ffffff;
 }
 
+.page-subtitle__catalog {
+  position: relative;
+  width: 320px;
+  min-height: 75px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 26px;
+  padding-left: 26px;
+  text-align: left;
+  background-color: #161c36;
+  border-radius: 0 0 20px 20px;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 73px;
+    left: 25px;
+    width: 172px;
+    border-top: 5px solid orange;
+    border-radius: 5px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-subtitle {
     width: 399px;
