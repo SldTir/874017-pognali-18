@@ -55,6 +55,15 @@
     .bold(20px, 20px);
     text-transform: none;
     color: #1d2e5b;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .companion-catalog__name::before {
@@ -217,7 +226,9 @@
     margin-top: 21px;
     width: 115px;
     cursor: pointer;
+  }
 
+  .companion-catalog__button-show-more {
     &:hover {
       color: rgba(29, 46, 91, 0.6);
     }
@@ -237,7 +248,41 @@
   }
 
   .companion-catalog__list-button-show-next-page {
+    display: flex;
     list-style: none;
+    .list-reset();
+    margin-top: 19px;
+    margin-bottom: 47px;
+    width: 270px;
+    min-height: 50px;
+  }
+
+  .companion-catalog__item-button-show-next-page {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 64px;
+    padding-right: 60px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .companion-catalog__item-button-show-next-page:nth-child(1) {
+    position: relative;
+    border-radius: 20px 0 0 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -1px;
+      width: 1px;
+      height: 50px;
+      background-color: #edeff6;
+    }
+  }
+
+  .companion-catalog__item-button-show-next-page:nth-child(2) {
+    border-radius: 0 20px 20px 0;
   }
 
   .companion-catalog__heard {
@@ -417,6 +462,22 @@
 
 .companion-catalog__item:nth-child(4) .companion-catalog__number-svg {
   stroke-dasharray: 451px;
+}
+
+.companion-catalog__button-show-more:hover .companion-catalog__plus-button-show {
+  opacity: 0.6;
+}
+
+.companion-catalog__button-show-more:active .companion-catalog__plus-button-show {
+  opacity: 0.3;
+}
+
+.companion-catalog__item-button-show-next-page:hover svg {
+  opacity: 0.6;
+}
+
+.companion-catalog__item-button-show-next-page:active svg {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

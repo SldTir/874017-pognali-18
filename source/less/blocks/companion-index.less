@@ -22,6 +22,20 @@
 
   border-radius: 0 0 30px 30px;
 
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 73px;
+    left: 1px;
+    width: 106px;
+    height: 132px;
+    background-color: #141b3b;
+    border-radius: 0 20px 20px 0px;
+
+    z-index: -2;
+  }
+
   .companion-index__subtitle-two-text {
     width: 220px;
     min-height: 220px;
@@ -138,6 +152,7 @@
     margin: auto;
     margin-top: 27px;
     padding-bottom: 14px;
+    cursor: pointer;
 
     &::before {
       position: absolute;
@@ -153,6 +168,14 @@
 
     &--active::before {
       background-color: #81e31e;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
