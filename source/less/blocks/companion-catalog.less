@@ -489,17 +489,26 @@
     background-color: #edeff6;
 
     .companion-catalog__list {
+      display: flex;
+      flex-direction: column;
+      width: 688px;
       .list-reset;
       margin: 0 auto;
     }
 
     .companion-catalog__item {
+      position: relative;
+      width: 688px;
       margin-top: 10px;
       border-radius: 30px;
     }
 
     .companion__images-avatar {
-      border-radius: 50%;
+      border-radius: 15px;
+      width: 190px;
+      height: 190px;
+      margin-top: 36px;
+      margin-left: 25px;
     }
 
     .companion-catalog__caption-three {
@@ -512,8 +521,24 @@
     }
 
     .companion-catalog__name {
-      .bold(20px, 20px);
+      width: 238px;
+      margin-top: 34px;
+      margin-left: 33px;
+      .bold(30px, 30px);
       color: #1d2e5b;
+    }
+
+    .companion-catalog__name::before {
+      top: 45px;
+      left: 458px;
+      width: 7px;
+      height: 7px;
+    }
+
+    .companion-catalog__text-hashtag {
+      width: 235px;
+      font-size: 20px;
+      line-height: 24px;
     }
 
     .companion-catalog__button-call {
