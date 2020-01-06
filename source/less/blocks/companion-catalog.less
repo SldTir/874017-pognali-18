@@ -546,7 +546,19 @@
       height: 17px;
     }
 
+    .companion-catalog__heard-images {
+      width: 20px;
+      height: 17px;
+    }
+
     .companion-catalog__heard-like--active {
+      width: 50px;
+      height: 50px;
+      padding-top: 18px;
+      padding-left: 15px;
+    }
+
+    .companion-catalog__heard--active {
       width: 50px;
       height: 50px;
       padding-top: 18px;
@@ -657,25 +669,147 @@
     .companion-catalog__list-button-show-next-page {
       list-style: none;
     }
+
+    .companion-catalog__level {
+      display: none;
+    }
+
+    .companion-catalog__level-tablet {
+      position: absolute;
+      top: 169px;
+      right: 25px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 59px;
+      min-height: 59px;
+      padding-left: 16px;
+      padding-bottom: 8px;
+      border-radius: 50%;
+      background: transparent;
+      box-sizing: border-box;
+    }
+
+    .companion-catalog__caption-three-tablet {
+      font-family: "Blogger Sans", "Arial", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: #1d2e5b;
+    }
+
+    .companion-catalog__caption-three-tablet::before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 13px;
+      width: 31px;
+      border-top: 1px solid #818486;
+    }
+
+    .companion-catalog__level-number-tablet {
+      font-family: "Blogger Sans", "Arial", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 24px;
+      color: #1d2e5b;
+    }
+
+    .companion-catalog__number-fill-tablet {
+      position: absolute;
+      z-index: 2;
+      left: 1px;
+      top: 1px;
+      right: 1px;
+      bottom: 1px;
+    }
+
+    .companion-catalog__number-svg-tablet {
+      fill: none;
+      stroke: #ff8d30;
+      stroke-width: 5px;
+      overflow: visible;
+      transform: rotate(-90deg);
+      stroke-linecap: round;
+      stroke-dasharray: 606px;
+    }
+
+    .companion-catalog__caption-three1::before {
+      width: 497px;
+      top: 8px;
+      right: 0;
+    }
+
+    .companion-catalog__caption-three1::after {
+      width: 72px;
+      top: 8px;
+      left: -84px;
+    }
+
+    .companion-catalog__list-images-flag {
+      width: 688px;
+      padding-left: 40px;
+      padding-right: 40px;
+      flex-direction: row;
+      .list-reset();
+      margin: auto;
+    }
+
+    .companion-catalog__caption-three1 {
+      margin-top: 16px;
+      margin-left: 83px;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
-  .companion-catalog__list-photo:nth-child(1) .companion__images-transport {
-    width: 19px;
-    height: 21px;
+  .companion-catalog__list-photo:nth-child(1) {
+    .companion__images-transport {
+      width: 19px;
+      height: 21px;
+    }
   }
-  .companion-catalog__list-photo:nth-child(2) .companion__images-transport {
-    width: 17px;
-    height: 21px;
+  .companion-catalog__list-photo:nth-child(2) {
+    .companion__images-transport {
+      width: 17px;
+      height: 21px;
+    }
   }
-  .companion-catalog__list-photo:nth-child(3) .companion__images-transport {
-    width: 24px;
-    height: 21px;
+  .companion-catalog__list-photo:nth-child(3) {
+    .companion__images-transport {
+      width: 24px;
+      height: 21px;
+    }
   }
-  .companion-catalog__list-photo:nth-child(4) .companion__images-transport {
-    width: 20px;
-    height: 21px;
+
+  .companion-catalog__list-photo:nth-child(4) {
+    .companion__images-transport {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+  .companion-catalog__item:nth-child(2) {
+    .companion-catalog__number-svg-tablet {
+      stroke-dasharray: 556px;
+    }
+  }
+  
+  
+  .companion-catalog__item:nth-child(3) {
+    .companion-catalog__number-svg-tablet {
+      stroke-dasharray: 359px;
+    }
+  }
+  
+  
+  .companion-catalog__item:nth-child(4) {
+    .companion-catalog__number-svg-tablet {
+      stroke-dasharray: 450px;
+    }
   }
 }
 
